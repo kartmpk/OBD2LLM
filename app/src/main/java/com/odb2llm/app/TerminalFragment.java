@@ -1,15 +1,10 @@
 package com.odb2llm.app;
-
 import static com.odb2llm.app.OBDUtils.decodeOBDResponse;
-
-import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.ComponentName;
-import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
-
 import android.os.Bundle;
 import android.os.IBinder;
 import android.text.Editable;
@@ -23,26 +18,14 @@ import android.text.style.AlignmentSpan;
 import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.fragment.app.Fragment;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayDeque;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -53,25 +36,30 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
     private ExecutorService executorService;
     private String deviceAddress;
     private SerialService service;
-
     public  TextView receiveText;
     private TextView sendText;
-
     private Connected connected = Connected.False;
     private boolean initialStart = true;
     private boolean pendingNewline = false;
     private String newline = TextUtil.newline_crlf;
-
-    public static final String INTRO_MESSAGE = "How can I help?" +
-            "\n\nYou can ask me questions like..." +
-            "\n\"What's the engine rpm?\"" +
-            "\n\"What's the engine coolant temperature?\"" +
-            "\n\"Read DTC error code.\"\n" +
-            "\nNote: It takes a few seconds for response after hitting send.\n";
+    private TextEmbeddingsViewModel textEmbeddingsViewModel;
+    public static final String INTRO_MESSAGE =
+            "Ask me anything about your vehicle!\n\n" +
+                    "Try these examples..\n" +
+                    "- Read engine RPM\n" +
+                    "- Check vehicle speed\n" +
+                    "- Get fuel level\n" +
+                    "- Read DTC error codes\n" +
+                    "- What does code P0420 mean?\n" +
+                    "- Why is coolant important?\n";
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        textEmbeddingsViewModel = new ViewModelProvider(this).get(TextEmbeddingsViewModel.class);
+        textEmbeddingsViewModel.setUpMLModel(requireActivity().getApplicationContext());
+        executorService = Executors.newSingleThreadExecutor(); // or cachedThreadPool, depending on your needs
+
         setHasOptionsMenu(true);
         assert getArguments() != null;
         deviceAddress = getArguments().getString("device");
@@ -81,93 +69,22 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
     public void onDestroy() {
         if (connected != Connected.False)
             disconnect();
+        executorService.shutdownNow();
         requireActivity().stopService(new Intent(getActivity(), SerialService.class));
         super.onDestroy();
-    }
-
-    private void downloadFile() {
-        executorService.execute(() -> {
-
-            String destinationPath = requireContext().getFilesDir().getAbsolutePath() + "/llm/model.bin";
-            File file = new File(destinationPath);
-
-            File parentDir = file.getParentFile();
-            if (parentDir != null && !parentDir.exists() && !parentDir.mkdirs()) {
-                Log.d(OBDUtils.TAG, "Failed to create directories: " + parentDir.getAbsolutePath());
-                return;
-            }
-
-            if (file.exists()) {
-                Log.d(OBDUtils.TAG, "File already exists. Skipping download.");
-                status(INTRO_MESSAGE);
-                return;
-            }
-
-            status("Downloading model.. Should be done in a few minutes");
-            InputStream inputStream = null;
-            FileOutputStream outputStream = null;
-
-            try {
-                URL url = new URL("https://bit.ly/chatobd");
-                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-                connection.setRequestMethod("GET");
-                connection.connect();
-
-                if (connection.getResponseCode() == HttpURLConnection.HTTP_OK) {
-                    inputStream = connection.getInputStream();
-                    outputStream = new FileOutputStream(file);
-
-                    byte[] buffer = new byte[1024];
-                    int bytesRead;
-
-                    while ((bytesRead = inputStream.read(buffer)) != -1) {
-                        outputStream.write(buffer, 0, bytesRead);
-                    }
-
-                    if (getActivity() != null && isAdded()) {
-                        getActivity().runOnUiThread(() -> status(INTRO_MESSAGE));
-                    }
-
-                } else {
-
-                    //debug
-                    Log.d(OBDUtils.TAG, "Response Code: " + connection.getResponseCode());
-                    InputStream errorStream = connection.getErrorStream();
-                    if (errorStream != null) {
-                        try (BufferedReader reader = new BufferedReader(new InputStreamReader(errorStream))) {
-                            StringBuilder errorResponse = new StringBuilder();
-                            String line;
-                            while ((line = reader.readLine()) != null) {
-                                errorResponse.append(line);
-                            }
-                            Log.e(OBDUtils.TAG, "Error response: " + errorResponse);
-                        }
-                    }
-                    requireActivity().runOnUiThread(() -> status("Download failed!"));
-                }
-            } catch (IOException e) {
-                Log.e(OBDUtils.TAG, "Error during file download", e);
-                requireActivity().runOnUiThread(() -> status("Download failed!"));
-            } finally {
-                try {
-                    if (inputStream != null) inputStream.close();
-                    if (outputStream != null) outputStream.close();
-                } catch (IOException e) {
-                    Log.e(OBDUtils.TAG, "Error closing streams", e);
-                }
-            }
-        });
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        downloadFile();
-
+        new ModelDownloader(requireContext(), executorService, this::status).downloadFile();
+        status(INTRO_MESSAGE);
         if(service != null)
             service.attach(this);
-        else
+        else {
             requireActivity().startService(new Intent(getActivity(), SerialService.class)); // prevents service destroy on unbind from recreated activity caused by orientation change
+            requireActivity().bindService(new Intent(getActivity(), SerialService.class), this, 0); // this binds and triggers onServiceConnected
+        }
     }
 
     @Override
@@ -175,14 +92,6 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         if(service != null && !getActivity().isChangingConfigurations())
             service.detach();
         super.onStop();
-    }
-
-    @SuppressWarnings("deprecation") // onAttach(context) was added with API 23. onAttach(activity) works for all API versions
-    @Override
-    public void onAttach(@NonNull Activity activity) {
-        super.onAttach(activity);
-        executorService = Executors.newSingleThreadExecutor();
-        requireActivity().bindService(new Intent(getActivity(), SerialService.class), this, Context.BIND_AUTO_CREATE);
     }
 
     @Override
@@ -215,9 +124,6 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         service = null;
     }
 
-    /*
-     * UI
-     */
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_terminal, container, false);
@@ -231,20 +137,12 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         return view;
     }
 
-   @Override
-    public void onCreateOptionsMenu(@NonNull Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.menu_terminal, menu);
-    }
-
-    /*
-     * Serial + UI
-     */
     private void connect() {
         try {
             BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
             BluetoothDevice device = bluetoothAdapter.getRemoteDevice(deviceAddress);
 
-           // status("Connecting to OBD2 Module ");
+            // status("Connecting to OBD2 Module ");
             Log.d(OBDUtils.TAG, "connecting to obd2 Module");
             connected = Connected.Pending;
             SerialSocket socket = new SerialSocket(requireActivity().getApplicationContext(), device);
@@ -268,7 +166,7 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
             Log.d("LLMInference", "Generated response: " + updatedPrompt);
             if (getActivity() != null) {
                 SpannableStringBuilder spannablePrompt = new SpannableStringBuilder(updatedPrompt + '\n'); // Combine updatedPrompt and newline
-                int promptLength = prompt.length(); // Save prompt length for span application
+                int promptLength = updatedPrompt.length(); // Save prompt length for span application
 
                 // Ensure prompt length doesn't exceed the spannable text length
                 if (promptLength > spannablePrompt.length()) {
@@ -305,15 +203,13 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         prompt.setSpan(new AlignmentSpan.Standard(Layout.Alignment.ALIGN_NORMAL), 0, prompt.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         receiveText.append(prompt);  // Append the message to receiveText immediately
 
-        TextEmbeddingsViewModel textEmbeddingsViewModel = new ViewModelProvider(this).get(TextEmbeddingsViewModel.class);
-        textEmbeddingsViewModel.setUpMLModel(requireActivity().getApplicationContext());
-
         String decodedobd2code = textEmbeddingsViewModel.calculateSimilarity(str);
 
         /* give a creative answer */
         if ("No match found".equals(decodedobd2code) || decodedobd2code == null) {
             if (str.trim().split("\\s+").length > 0) {
                 OBD2inference("<start_of_turn>user Respond in not more than 10 words only" + str + "<end_of_turn>model>");
+                //OBD2inferenceAsync("<start_of_turn>user Respond in not more than 10 words only" + str + "<end_of_turn>model>");
             }
         } else {    /* send obd2 code across */
             str = decodedobd2code.substring(0, 4); // Take the first character

@@ -78,8 +78,6 @@ public class DevicesFragment extends ListFragment {
         inflater.inflate(R.menu.menu_devices, menu);
         if(permissionMissing)
             menu.findItem(R.id.bt_refresh).setVisible(true);
-        if(bluetoothAdapter == null)
-            menu.findItem(R.id.bt_settings).setEnabled(false);
     }
 
     @Override
@@ -91,12 +89,7 @@ public class DevicesFragment extends ListFragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.bt_settings) {
-            Intent intent = new Intent();
-            intent.setAction(android.provider.Settings.ACTION_BLUETOOTH_SETTINGS);
-            startActivity(intent);
-            return true;
-        } else if (id == R.id.bt_refresh) {
+        if (id == R.id.bt_refresh) {
             if(BluetoothUtil.hasPermissions(this, requestBluetoothPermissionLauncherForRefresh))
                 refresh();
             return true;

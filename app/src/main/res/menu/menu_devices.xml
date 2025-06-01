@@ -6,7 +6,4 @@
         android:title="REFRESH"
         app:showAsAction="always"
         android:visible="false" />
-    <item
-        android:id="@+id/bt_settings"
-        android:title="Bluetooth settings" />
 </menu>

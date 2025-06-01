@@ -8,7 +8,8 @@ import java.io.File
 
 class InferenceModel private constructor(context: Context) {
     private var llmInference: LlmInference
-    private val modelPath: String = context.filesDir.absolutePath + "/llm/model.bin"
+    //private val modelPath: String = context.filesDir.absolutePath + "/llm/model.bin"
+    private val modelPath: String = "/data/local/tmp/llm/model.task"
 
     private val modelExists: Boolean
         get() = File(modelPath).exists()
@@ -26,9 +27,6 @@ class InferenceModel private constructor(context: Context) {
         val options = LlmInference.LlmInferenceOptions.builder()
             .setModelPath(modelPath)
             .setMaxTokens(1024)
-            .setResultListener { partialResult, done ->
-                _partialResults.tryEmit(partialResult to done)
-            }
             .build()
 
             llmInference = LlmInference.createFromOptions(context, options)
@@ -43,11 +41,7 @@ class InferenceModel private constructor(context: Context) {
         private var instance: InferenceModel? = null
 
         fun getInstance(context: Context): InferenceModel {
-            return if (instance != null) {
-                instance!!
-            } else {
-                InferenceModel(context).also { instance = it }
-            }
+            return instance ?: InferenceModel(context).also { instance = it }
         }
     }
 }
