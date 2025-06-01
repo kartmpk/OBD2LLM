@@ -7,6 +7,14 @@
     android:orientation="vertical"
     android:background="@color/bgcolor">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="ChatOBD2"
+        app:titleTextColor="@android:color/white" />
+
     <TextView
         android:id="@+id/receive_text"
         android:layout_width="match_parent"
@@ -43,4 +51,3 @@
     </LinearLayout>
 
 </LinearLayout>
-
