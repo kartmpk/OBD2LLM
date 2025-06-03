@@ -1,0 +1,1919 @@
+Code(s): P0001, P0002, P0003, P0004
+Symptom(s):
+*   Your engine might not start or could stall unexpectedly.
+*   Your car might go into "Limp Mode" or feel like it doesn't have enough power.
+*   Also, the check engine light will turn on.<chunk_splitter>
+Cause(s):
+*   Common issues include a problem with the fuel pressure regulator.
+*   Faulty wiring harnesses and connectors.
+*   A bad computer in the car called the PCM.
+Diagnosis Next Step(s):
+*   A mechanic will use a scan tool to check sensor readings.
+*   They can clear codes and drive the car.
+*   They might use a voltage meter or fuel pressure tester.
+<chunk_splitter>
+Code: P0010
+Symptom(s):
+*   The check engine light will come on.
+*   You might notice worse gas mileage.
+*   You could feel the engine running or idling roughly.
+*   Less power when accelerating.
+*   Hear rattling or knocking sounds.
+<chunk_splitter>
+Cause(s):
+*   A common cause is a bad VVT control solenoid valve.
+*   Oil sludge buildup in the engine.
+*   Your crankshaft or camshaft position sensor might be failing.
+*   Damaged or frayed wires.
+*   The engine might be operating outside its normal timing settings.
+Diagnosis Next Step(s):
+*   It's a common mistake to replace the timing actuator without trying to clean it first.
+*   It's important to check the electrical system.
+<chunk_splitter>
+*   Rely on a qualified mechanic. They use engine oil pressure for changing timing.
+*   Low oil or sludge can prevent oil from reaching the actuator.
+*   Mechanic checks other codes, clears the light.
+*   They check 'freeze frame' data.
+<chunk_splitter>
+*   Visually inspect the bank one VVT control solenoid valve.
+*   Fix damaged wiring or connectors.
+*   Check for engine sludge.
+*   Test the resistance of the solenoid.
+<chunk_splitter>
+Code: P0027
+Symptom(s):
+*   The most common symptom is the check engine light.
+*   You might use more gas.
+*   You might have trouble accelerating or feel a lack of power.
+*   More serious: engine misfiring and a rough idle.
+Cause(s):
+*   Frequent causes include damaged wiring (short or open).
+*   A bad powertrain control module (PCM).
+*   Low or dirty engine oil can be a problem.
+*   Losing ground contact due to a bad connector.
+<chunk_splitter>
+
+Diagnosis Next Step(s):
+*   Diagnosing this can be easy if you know what you're doing.
+*   People often confuse it or have two problems at once, leading to misdiagnosis.
+*   Getting professional help is much better than guessing.
+Code: P0028
+Symptom(s):
+*   The check engine light is a common symptom.
+<chunk_splitter>
+*   Your engine might also lack power.
+*   Less efficient, so you might notice more fuel use.
+*   Experience the engine running roughly, hesitating, or stuttering when stopped or driving.
+Cause(s):
+*   Contaminated oil is a common cause.
+*   Dirty oil can damage the intake valve system.
+*   Other parts like the camshaft actuator, control solenoid, timing chain, or timing belt can malfunction.
+*   The ECM or PCM computers can also fail.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   It's pretty easy to misdiagnose this code.
+*   You need detailed knowledge of the electrical system.
+*   Different car models are specific, making accurate diagnosis hard unless you're an expert.
+*   Many people prefer taking their car to a professional for an accurate diagnosis.
+<chunk_splitter>
+Code: P0035
+Symptom(s):
+*   You'll see the check engine light turn on.
+*   Likely notice a lack of engine performance and fuel efficiency.
+*   The turbocharger or supercharger isn't providing boost.
+*   Sometimes, can cause your vehicle to enter "Limp Home mode".
+<chunk_splitter>
+Cause(s):
+*   Failing engine parts are common.
+*   Often, the turbocharger or supercharger bypass valve is the issue. It might be faulty or stuck closed.
+*   Electrical problems like damaged wires or bad connections.
+*   Rarely, the PCM computer can have issues.
+Diagnosis Next Step(s):
+*   Diagnosing can sometimes be simple if checking the faulty turbocharger bypass valve first. This might even be an easy fix.
+<chunk_splitter>
+*   However, it gets complicated if it's not the bypass valve.
+*   Missing that problem is a common beginner mistake.
+*   Especially true for intermittent problems.
+*   You might need specialized knowledge.
+*   It's best to take it to an experienced mechanic.
+<chunk_splitter>
+Code: P0087
+Symptom(s):
+*   All common symptoms relate to decreased engine performance because the fuel system isn't working right.
+*   Might include more misfires, rough running.
+*   Running "lean" (not enough fuel), high engine RPMs, and stalling.
+<chunk_splitter>
+*   Your vehicle might use more fuel, meaning worse gas mileage.
+*   Finally, you should definitely see the check engine light turn on.
+Cause(s):
+*   Any problem affecting fuel delivery or sensing fuel pressure can cause this.
+*   Possible causes include not enough fuel, kinked fuel lines, or a faulty fuel pressure regulator.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing this code is exceptionally difficult.
+*   So many possible causes (a dozen or more).
+*   You need to check many things and know how to test parts.
+*   This is not a good code to try to figure out by yourself.
+*   It's best to talk to a qualified mechanic.
+<chunk_splitter>
+Code: P0088
+Symptom(s):
+*   Symptoms vary based on severity.
+*   Common signs: the check engine light flashing on, poor fuel economy, black smoke from the tailpipe.
+*   Engine misfires or difficulty starting, oil dilution, rough idle.
+*   Exhaust running too "rich" (too much fuel).
+<chunk_splitter>
+*   The car going into failsafe mode.
+*   Loss of engine speed or power.
+*   The engine stalling completely.
+Cause(s):
+*   This code means there's a high-pressure fuel system issue.
+*   Caused by a faulty fuel pressure regulator.
+*   Kinked or damaged fuel lines.
+*   Clogged fuel filters.
+<chunk_splitter>
+*   Bad parts in the fuel injector system like a faulty fuel pressure sensor, pressure fuel pump, or fuel injector.
+*   Sometimes the fuel pressure is fine, but the sensor reading it is the problem.
+Diagnosis Next Step(s):
+*   For a DIYer, telling if the fuel rail pressure is too high or low can be simple.
+*   But if your engine is misfiring, it's best to see an expert.
+<chunk_splitter>
+*   A visual inspection is the best a DIYer can do.
+*   However, even if you find the cause, don't touch hot engine surfaces.
+*   High-pressure fuel systems are very dangerous if you're not careful.
+<chunk_splitter>
+Code: P0089
+Symptom(s):
+*   The most noticeable symptom is the check engine light.
+*   Other issues include poor fuel economy.
+*   Problems with engine acceleration.
+*   The engine possibly stalling randomly.
+*   It's also common for other trouble codes to appear with this one.
+<chunk_splitter>
+Cause(s):
+*   This code has a wide range of potential causes.
+*   It could be issues with the fuel pressure regulator or fuel pump.
+*   Problems with the pressure sensor are also possible.
+*   Rarely, the PCM computer.
+*   Issues with the fuel filter, fuel lines, or wiring and connectors can trigger this.
+*   Most common: fuel pressure regulator problem, but never assume this.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   The diagnostic process is mostly just time-consuming.
+*   Because there are so many potential problems, you need to know how to check all of them.
+*   This isn't always easy for beginners.
+*   Most experts recommend talking to a local repair shop for help.
+<chunk_splitter>
+Code: P0097
+Symptom(s):
+*   Symptoms might include the check engine light flashing.
+*   Worse fuel economy, difficulty accelerating, lack of engine power.
+*   The engine running too lean or rich depending on temperature.
+*   Other issues with the engine control module (ECM).
+*   Symptoms can be subtle; usually, you'll only notice when the light comes on.
+<chunk_splitter>
+Cause(s):
+*   Causes often involve a switch circuit failure in the sensor, wiring, or engine.
+*   Contamination from engine oil can also cause it.
+*   Missing data for engine coolant can lead to leaks and also be a cause.
+Diagnosis Next Step(s):
+*   This code can be very hard to diagnose yourself.
+*   Unless you really understand combustion temperatures and how switch circuits fail.
+*   It's best to leave the repairs to experts at your local repair shop.
+<chunk_splitter>
+Code: P0101
+Symptom(s):
+*   For fuel and air metering codes like this, the most common symptom is the check engine light staying on.
+*   Some drivers notice their engine runs a bit erratically.
+*   The engine might have less power or idle inconsistently.
+*   Sometimes, you might also get worse gas mileage.
+<chunk_splitter>
+Cause(s):
+*   The MAF (Mass Airflow) sensor measures air going into the engine.
+*   The computer uses this for fuel injection.
+*   If the signal from the MAF sensor is too low or too high, the computer sets this code.
+Diagnosis Next Step(s):
+*   Several ways to diagnose, but it's best to leave it to a professional mechanic.
+*   It takes experience to find the exact cause and related codes.
+*   A mechanic checks for loose wires or faulty parts.
+<chunk_splitter>
+*   After inspecting and fixing, they'll reset the computer and scan again.
+*   If the code returns, they'll check electrical connectors and likely replace the MAF sensor.
+*   Seeking a professional is recommended.
+<chunk_splitter>
+Code: P0129
+Symptom(s):
+*   Most symptoms involve problems with fuel delivery and engine performance.
+*   You might see the engine getting too much fuel ("running rich").
+*   Leading to worse gas mileage, hesitation when accelerating, and lack of power.
+<chunk_splitter>
+*   In rare cases, the engine might misfire.
+*   You could also see black smoke from the exhaust.
+*   Even without other symptoms, the check engine light should turn on.
+Cause(s):
+*   There are actually many possible causes for this code.
+*   This code simply means one of the barometric pressure sensors shows a low reading.
+*   It doesn't say which or why.
+*   It's considered a symptom code, not a cause code.
+*   You'll need to check other codes and do inspections.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing this code is often very time-consuming.
+*   It can take many hours checking various parts.
+*   Might require tools most DIYers don't have, like a vacuum gauge or digital volt/ohmmeter.
+*   Diagnosing P0129 is not considered easy.
+*   Shouldn't be attempted without experience.
+*   Talk to a professional instead.
+<chunk_splitter>
+Code: P0155
+Symptom(s):
+*   One of the first things you'll notice is the Check Engine Light coming on and staying on.
+*   Often, there aren't immediate physical symptoms.
+*   The code can cause the engine to run too rich.
+<chunk_splitter>
+*   This can lead to failing emissions tests and worse fuel economy.
+*   You might also have a rough idle when stopped.
+Cause(s):
+*   One of the most common causes is a faulty or broken pre-catalyst oxygen sensor.
+*   Bad or damaged wiring or harnesses around the oxygen sensor are also common.
+*   An open circuit or short to ground near the sensor.
+*   Issues with the engine coolant temperature sensor.
+*   A faulty PCM itself.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosis is relatively straightforward, but it's still recommended to leave it to qualified technicians.
+*   First step is to reset the code and test drive.
+*   If the light stays on, check if the oxygen sensor is getting the right battery voltage using a multimeter.
+<chunk_splitter>
+*   Disconnect and reconnect the wiring harness.
+*   If you find damage to wiring or terminals, they need replacing.
+*   If they look good, check the engine ground for loose connections or corrosion. Fix it before restarting diagnosis.
+<chunk_splitter>
+Code(s): P0171 (and P0170, P0173, P0174)
+Symptom(s):
+*   The engine feeling like it lacks power and potentially stalling.
+*   If it's a vacuum leak, you might hear a hissing sound.
+*   Your engine might have trouble starting.
+*   Engine knock or ping when under load or accelerating uphill, along with power loss.
+<chunk_splitter>
+Cause(s):
+*   The most common cause is unmetered air entering the system.
+*   Often happens because of faulty or dirty mass airflow sensors or weak fuel pumps.
+*   Clogged or dirty fuel filters or fuel injectors can also let unmetered air in.
+*   Bad oxygen sensors should also be checked.
+*   Exhaust leaks can also set these codes.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   A common mistake is immediately replacing the air-to-fuel or oxygen sensor without checking further.
+*   If you have a good scanner, you should be able to find exactly where the air/fuel problem is.
+*   Inspect those parts.
+*   Prioritize checking the mass airflow sensor and vacuum leaks.
+<chunk_splitter>
+*   It's crucial to read and analyze fuel trims and freeze-frame data for a correct diagnosis.
+*   Someone with little experience can easily misdiagnose this.
+*   Replacing the O2 sensor might not fix the root issue.
+*   This is why analyzing fuel trims and freeze-frame data is critical.
+*   Again, this is best left to qualified technicians.
+<chunk_splitter>
+Code(s): P0172 and P0175 (engine running too rich)
+Symptom(s):
+*   You might notice fewer physical symptoms.
+*   Vehicle runs inefficiently, burning extra fuel.
+*   You'll get fewer miles per gallon.
+*   Sometimes, you might see black smoke or residue from the exhaust.
+*   Could experience misfires and a rough idle or lack of power.
+<chunk_splitter>
+Cause(s):
+*   The most common cause is a faulty fuel injector that leaks too much fuel.
+*   A leak in the fuel lines can sometimes make it look like injectors are the problem.
+*   If fuel lines are fine, vacuum line leaks could cause a rich condition.
+Diagnosis Next Step(s):
+*   The diagnosis steps are the same as for P0171.
+*   Use a good scanner to find where the air/fuel problem is.
+*   Crucial to read and analyze fuel trims and freeze-frame data.
+*   Easy to misdiagnose.
+*   Best left to qualified technicians.
+<chunk_splitter>
+Code: P0300
+Symptom(s):
+*   Check engine light coming on.
+*   If severe enough (potentially damage catalytic converter), the light will flash.
+*   Vehicle idling roughly (shaking or vibrating).
+*   Vehicle hesitating when accelerating.
+*   Using more fuel.
+*   Failing to start.
+*   Symptoms relate to engine's combustion problems.
+<chunk_splitter>
+Cause(s):
+*   P0300 with steady light means active misfire, flashing means severe.
+*   Many causes.
+*   Most common: damaged or worn spark plugs.
+*   Computer monitors for misfires.
+*   Temporary misfire possible (e.g., very low fuel).
+*   A faulty or damaged distributor cap can cause P0300.
+*   Others: low fuel pressure, leaking head gaskets, faulty sensors, catalytic converters.
+*   Don't assume faulty sensor until serious symptoms ruled out.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Common misdiagnosis is ruling out faulty cylinder, fuel injection, or PCM too early.
+*   Other codes can also cause misfires and trigger P030X codes.
+*   Because of this, make sure your technician is an expert.
+<chunk_splitter>
+Code(s): P0307, P0308
+Symptom(s):
+*   Symptoms vary.
+*   Difficulty starting, might not start.
+*   Vehicle might stall when you speed up or stop.
+*   Rough running is common.
+*   Vehicle might lack power and use more fuel.
+*   The check engine light should turn on.
+*   If engine speed changes by more than 10%, light will probably flash (serious, needs immediate attention).
+<chunk_splitter>
+Cause(s):
+*   There are seemingly endless possible causes.
+*   Almost any engine-related issue can lead to a misfire.
+*   The variety can be overwhelming.
+*   This code should not be your starting point.
+Diagnosis Next Step(s):
+*   Diagnosing these codes can be extremely difficult.
+*   You shouldn't typically use these as the main way to figure out the problem.
+*   Most of the time, there will be other codes stored that give more clues.
+*   If you're not comfortable, talk to a professional mechanic.
+<chunk_splitter>
+Code: P0313
+Symptom(s):
+*   Depending on the cause, you might see engine running roughly, lack of power, and hesitation when accelerating.
+*   If fuel issues significant, you might have trouble starting or it might not start at all.
+*   Regardless of severity, you should always see the check engine light turn on.
+<chunk_splitter>
+Cause(s):
+*   The most common cause for this misfire code is low fuel level.
+*   If fuel is low enough to expose the fuel pump, it might not create enough pressure.
+*   If you have enough fuel, problems could include a failing fuel pump.
+*   Clogged or bad fuel filter.
+*   Faulty fuel pressure regulator.
+<chunk_splitter>
+*   Clogged or failed fuel injectors.
+*   A short or open circuit in fuel pump wiring.
+*   Issues with electrical connectors.
+*   Less commonly: spark plugs, ignition wires, or mass air flow sensor issues.
+Diagnosis Next Step(s):
+*   It depends on the problem.
+*   For most people, this code is due to low fuel. Adding more fuel might fix it right away.
+*   Sometimes the issue is more serious, requiring checking electrical wiring, fuel pump system, and vacuum hoses.
+<chunk_splitter>
+*   You might also need special tools.
+*   That's when an experienced mechanic can be very helpful.
+Code: P0316
+Symptom(s):
+*   One of the first symptoms is the Check Engine Light coming on.
+*   You'll notice a decrease in engine performance, less acceleration, and worse fuel economy.
+*   You might experience a rough idle, harsh acceleration.
+*   The engine might cut out.
+*   If you notice any of these, have a qualified technician examine your vehicle immediately.
+<chunk_splitter>
+Cause(s):
+*   Since this code is related to engine misfiring, many things can cause it.
+*   One of the most common reasons is issues with the Crankshaft Position Sensor.
+*   Fuel injector problems or a bad fuel pump can also cause it.
+*   Ignition system issues can be at fault.
+*   A clogged catalytic converter can also be to blame.
+*   Vacuum leaks or a faulty PCM are less common.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   First step for a qualified technician: look at live data for misfire before replacing parts.
+*   They might swap components to confirm a mechanical problem.
+*   Inspect the catalytic converter, camshaft and crankshaft sensors using advanced scanning tools.
+*   Check for lean fuel conditions caused by low fuel pressure.
+<chunk_splitter>
+*   Checking for vacuum leaks is the next step, followed by checking fuel injectors.
+*   They'll then check the EGR valve operation and monitor the catalytic converter.
+*   Finally, they'll check the camshaft and crankshaft sensors, wiring, or connectors for damage.
+<chunk_splitter>
+Code: P0350
+Symptom(s):
+*   A common symptom is ignition misfires.
+*   Leading to drivability issues and poor engine performance.
+*   You might have problems with the engine stalling.
+*   Difficulty accelerating.
+*   Poor fuel efficiency.
+<chunk_splitter>
+Cause(s):
+*   Common causes: faulty or shorted electrical circuits.
+*   Defective or damaged ignition coils or coil packs are frequent.
+*   Disconnected, frayed, or otherwise bad wiring and connectors are common.
+*   A malfunctioning PCM computer can also be a cause.
+*   Blown fuses or faulty ignition system relays can also trigger this code.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Properly diagnosing this code is not easy.
+*   Requires using tools like a diagnostic scanner and a digital volt/ohmmeter (DVOM) correctly.
+*   Because of this, it's highly recommended not to try diagnosing it yourself.
+*   Qualified technicians are better equipped.
+<chunk_splitter>
+Code(s): P0365, P0366, P0367, P0368, P0369
+Symptom(s):
+*   Symptoms often depend on the specific code.
+*   All of these should activate the check engine light.
+*   Possible symptoms: a general lack of power, difficulty starting, and engine misfiring.
+*   In very bad situations, you could experience a complete loss of power while driving or the car might not start at all.
+<chunk_splitter>
+Cause(s):
+*   These codes have a wide range of potential causes.
+*   The camshaft position sensor itself might be faulty or have oil leaking onto it.
+*   General sensor circuit shorts are possible.
+*   In very rare cases, a faulty PCM computer can cause these issues.
+Diagnosis Next Step(s):
+*   Dealing with parts as critical as the crankshaft or camshaft, the diagnosis will be tricky.
+*   Difficult to figure out the exact cause because there are so many possibilities.
+*   Instead of trying it yourself, it's best to hand the process over to an expert.
+<chunk_splitter>
+Total 50 + 50 = 100 tokens exactly in this chunk.Code: P0410
+Symptom(s):
+*   You can expect your engine computer (ECM) to trigger the Check Engine Light.
+*   You might also see the engine running "rich" (too much oxygen sent into exhaust).
+*   Rich running can also lead to poor fuel economy.
+*   Faulty oxygen sensors usually trigger other codes first.
+<chunk_splitter>
+Cause(s):
+*   Common causes include a blocked air injection system intake.
+*   Faulty oxygen sensors sending incorrect readings.
+*   If the oxygen sensor is damaged or its wiring is corroded, it will give inaccurate readings.
+*   A partially clogged catalytic converter.
+*   If the relay contacts in the air injection pump aren't making good contact.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing this code can take several steps.
+*   Best left to qualified technicians.
+*   A technician records freeze-frame data, clears codes, and test drive to check the air injection system.
+*   Any other codes appearing need to be fixed first.
+*   Watch the oxygen sensor in real-time using a scanner.
+*   See if it reacts when the air injection pump turns on (should drop below 150 millivolts within three seconds).
+<chunk_splitter>
+*   If it takes longer, the sensor might be faulty.
+*   If sensors aren't the problem, they'll check if the air injection relay is getting power.
+*   Finally, they'll use a multimeter to check the resistance of the air injection pump.
+<chunk_splitter>
+Code: P0441
+Symptom(s):
+*   The main symptom is an illuminated check engine light.
+*   This is usually the only symptom.
+*   Some people report smelling fuel inside or around the vehicle, but this is less common.
+Cause(s):
+*   Several things can trigger this.
+*   The main cause is a faulty purge valve.
+*   Other common causes: a disconnected or clogged purge line.
+*   Electrical issues like loose connections or damaged wires.
+*   Problems with the control module.
+*   Other issues within the EVAP system.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Codes can have multiple causes.
+*   Can be difficult to find the exact one and easy to misdiagnose P0441.
+*   You need to check several components.
+*   Diagnosis is quicker and more accurate with a professional mechanic.
+<chunk_splitter>
+Code: P0450
+Symptom(s):
+*   Unfortunately, most of the time, there are no obvious symptoms except the check engine light.
+*   In some cases, you might smell fuel from the engine area.
+*   Getting the check engine light checked is important, even without noticeable driving problems.
+<chunk_splitter>
+Cause(s):
+*   Generally, a few things can cause this code.
+*   The EVAP pressure sensor itself might be bad.
+*   There could be electrical problems with the sensor circuit.
+*   Sometimes the problem is a PCM computer that needs a software update.
+*   Rarely, mechanical problem with the PCM.
+Diagnosis Next Step(s):
+*   There are only a few causes, which can be good.
+*   However, the actual process can still be complex.
+*   Hard to figure out if the sensor is bad, if there are circuit problems, or if the PCM needs fixing.
+*   Diagnosing P0450 can be complicated.
+*   Often left to an expert.
+<chunk_splitter>
+Total 47 + 56 = 103 tokens. Splitter before Diagnosis.Diagnosis Next Step(s):
+*   There are only a few causes, which can be good.
+*   However, the actual process can still be complex.
+*   Hard to figure out if the sensor is bad, if there are circuit problems, or if the PCM needs fixing.
+*   Diagnosing P0450 can be complicated.
+*   Often left to an expert.
+<chunk_splitter>
+Code: P0471
+Symptom(s):
+*   Symptoms often depend on the cause.
+*   The most prominent symptom is the check engine light.
+*   You might experience a general lack of power, especially when accelerating to engage the turbo/supercharger.
+*   Can sometimes lead to engine overheating.
+*   Diesel engine might be unable to perform its manual regeneration.
+<chunk_splitter>
+*   Can eventually cause a no-crank situation.
+Cause(s):
+*   Problems with the exhaust gas pressure sensor are most common.
+*   Including electrical failures, wiring issues, and loose connections.
+*   The EGR system could be faulty.
+*   A blockage in the tube between the exhaust manifold and the pressure sensor.
+*   Very rarely, a serious PCM issue.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Many potential steps.
+*   Need to look into the tube connecting the pressure sensor and exhaust manifold.
+*   Check the pressure sensor itself.
+*   Try the tube connecting the turbocharger and intake manifold.
+*   Check all the wires leading to the sensor.
+*   Possible for skilled DIYers, an automotive repair expert can do it more easily.
+<chunk_splitter>
+Code: P0481
+Symptom(s):
+*   The most obvious symptom is the check engine light.
+*   Depending on severity, you might notice additional symptoms like... (list not provided).
+Cause(s):
+*   Many factors can trigger this code.
+*   The most common culprit is a faulty fan control relay, affecting the fan circuit.
+*   Other potential causes include... (list not provided).
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing this code can be challenging because there are many potential causes.
+*   A professional mechanic with a scanner should figure it out.
+*   Your mechanic will follow the diagnostic steps in your vehicle's service manual.
+*   Procedure might involve checking the fan control circuit, control wires, fan connections, engine fan, radiator core, and control pulses.
+<chunk_splitter>
+*   Diagnosis time can range from an hour to days.
+*   To save money and get an accurate diagnosis, avoid non-professional mechanics and take your car to a highly-rated service center.
+<chunk_splitter>
+Code: P0497
+Symptom(s):
+*   It's most common to have few or no symptoms.
+*   If you do: issues with fuel economy, a leaking sound from under the hood, or engine idling problems.
+*   The most common symptom is simply the check engine light may come on.
+<chunk_splitter>
+Cause(s):
+*   There is an extremely wide variety of causes for this code.
+*   This is largely because the EVAP system is very large.
+*   Some potential causes include... (list not provided).
+*   This code can happen if the pressure sensor is faulty or wired poorly.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   The process for diagnosing this code can be incredibly frustrating.
+*   So many different parts related to your EVAP system.
+*   You need to check every part.
+*   Much harder than expected for a DIYer.
+*   Best to trust experts instead.
+<chunk_splitter>
+Code(s): P0508, P0509
+Symptom(s):
+*   These codes can lead to various issues with how smoothly your engine runs.
+*   Common symptoms include the engine idle speed being very high.
+*   Your engine might stall while idling.
+*   You could have a general rough idle.
+<chunk_splitter>
+*   You might also hear unusual noises coming from the throttle body.
+*   It's very common to see other codes related to the idle air control (IAC) system.
+*   The check engine light should also turn on.
+Cause(s):
+*   A number of different things can cause these codes.
+*   Here are a few common causes... (list not provided).
+*   This is not a complete list.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing these codes can be difficult.
+*   Often, they appear with other related codes.
+*   While there are common causes, there's a wide variety of possibilities.
+*   You'll likely need to do a lot of work.
+*   It could be a good idea to trust an expert.
+<chunk_splitter>
+Code: P0603
+Symptom(s):
+*   Symptoms for this code vary greatly depending on the car.
+*   You might have no issues at all besides the check engine light.
+*   Could notice the engine doesn't start smoothly.
+*   Uses more fuel, has problems with idling and accelerating.
+*   Shifting is difficult, and even misfiring.
+<chunk_splitter>
+*   No matter what you're experiencing, it's best to talk to an expert.
+Cause(s):
+*   This code typically appears because of a problem with the power or wiring.
+*   The most common issue is a blown fuse.
+*   Might mean your PCM computer isn't getting enough power for its Keep Alive Memory (KAM).
+<chunk_splitter>
+*   A problem with the KAM module or the battery ground shorting out possible.
+*   In the worst case, the KAM module might have failed.
+Diagnosis Next Step(s):
+*   The diagnosis process can be surprisingly difficult.
+*   Problems can be minor.
+*   If charging the battery doesn't fix it, you might need to investigate various areas.
+<chunk_splitter>
+*   Sometimes it might just be a misfire.
+*   It's hard to know what the code means.
+*   It's best to leave the diagnosis of P0603 to an expert.
+<chunk_splitter>
+Code: P0638
+Symptom(s):
+*   Symptoms depend on severity and if other codes are present.
+*   You should expect the check engine light.
+*   Likely also see varied engine performance issues like rough running and stalling.
+*   In some cases, the vehicle will be stuck in Limp Mode.
+<chunk_splitter>
+*   Reducing speed and turning off systems like AC.
+Cause(s):
+*   A faulty throttle body assembly or a bad throttle position sensor are the most common causes.
+*   Most of the time, the issue is with the sensor or the throttle actuator; check those first.
+*   A clogged or dirty throttle body can also lead to loss of throttle control.
+*   Electrical wiring problems possible.
+*   Very rarely, a PCM malfunction.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   The diagnosis process is often not that difficult.
+*   Most of the time, the problem involves the throttle actuator or throttle position sensors.
+*   Almost always, this code means you need to replace the broken part.
+*   Generic steps can help, but a non-professional likely won't know the exact steps for your car.
+*   If you don't have info to replace parts, knowing the diagnosis doesn't always help.
+<chunk_splitter>
+Code: P0660
+Symptom(s):
+*   This code generally starts with the check engine light.
+*   Other symptoms include engine performance issues.
+*   Sometimes misfiring during start-up and bad fuel economy.
+*   Problems with cold starts.
+*   Some people notice a loud clicking noise from the engine area.
+<chunk_splitter>
+Cause(s):
+*   One significant cause is a bad intake manifold runner valve.
+*   This can happen if it was defective, is contaminated, or broken.
+*   The valve can also get stuck open.
+*   Extremely cold temperatures also make this code more likely.
+Diagnosis Next Step(s):
+*   The main problem when diagnosing this code is that it can be very confusing.
+*   There's a whole list of things to check.
+*   Including the intake manifold runner valve, cold temperatures, intake manifold tuning valve, and connections.
+<chunk_splitter>
+*   This might require time, energy, and tools you don't have.
+*   Which is why people often prefer experts.
+<chunk_splitter>
+Code(s): P0661, P0662
+Symptom(s):
+*   Like many codes, the first symptom is likely the check engine light.
+*   Many other possible symptoms.
+*   General decrease in engine power and poor performance.
+*   Bad fuel economy.
+*   A loud clicking noise might come from the engine bay.
+<chunk_splitter>
+*   Cold start problems happen occasionally, including possible misfiring on startup.
+*   Take the light seriously.
+Cause(s):
+*   These codes are often symptom codes, not cause codes.
+*   Here are a few possible causes... (list not provided).
+<chunk_splitter>equire time, energy, and tools you don'
+Diagnosis Next Step(s):
+*   Diagnosing these codes is notably quite difficult.
+*   Almost anything could be wrong.
+*   You could even have vacuum line issues.
+*   Hard to be sure until you go through diagnostic flowcharts.
+*   You'll need to check all other trouble codes first, often looking at the earliest one.
+<chunk_splitter>
+*   Most DIYers aren't equipped for this.
+*   It's best to direct questions to highly rated, verified experts.
+<chunk_splitter>
+My name is Tom
+<chunk_splitter>
+Code: P0671
+Symptom(s):
+*   Usually minimal symptoms if only one glow plug has a code.
+*   More likely problems when starting in cold weather.
+*   Common symptoms: difficulty starting (sometimes not starting in the cold).
+*   Lack of power with a cold engine or hesitation when accelerating.
+<chunk_splitter>
+*   More likely with issues in more cylinders.
+*   Your check engine light will often turn on, but not always with this code.
+Cause(s):
+*   Primary cause: issues with your sensors or wiring.
+*   Includes a faulty cylinder #1 glow plug.
+*   Damaged wiring connector, electrical connection issue, or an open or shorted circuit.
+*   Occasionally, problem in the rest of the glow plug system (timer module or relay).
+*   Rare: glow plug control module or PCM/ECM issues (uncommon if only code).
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing this code isn't especially difficult compared to some.
+*   Still needs knowledge/experience with the glow plug system.
+*   Only a few common causes.
+*   If uncomfortable diagnosing an engine problem yourself, talk to a certified mechanic.
+<chunk_splitter>
+Code: P0700
+Symptom(s):
+*   The most common symptom is the check engine light.
+*   If your car has a failsafe mode, that will activate.
+*   Changing how the transmission shifts, engine speed, or load.
+*   Other symptoms: vehicle hesitating, issues when changing gears, stalling, rough driving, worse gas mileage.
+*   P0700 is very general; other P07XX codes help pinpoint the issue.
+<chunk_splitter>
+Cause(s):
+*   Several problems can cause this code.
+*   In many cases, a defect with the shift solenoid.
+*   Sometimes, a short or open circuit in the transmission control module (TCM) or engine coolant sensor.
+*   A faulty TCM.
+*   In rare cases, the powertrain control module (PCM) could also be faulty.
+Diagnosis Next Step(s):
+*   The main mistake to avoid is diagnosing based on symptoms instead of what the code indicates.
+*   Driving issues related to P0700 are often wrongly thought to be engine misfires.
+*   It is best to rely on a professional mechanic for an accurate diagnosis.
+<chunk_splitter>
+Total 59 + 54 = 113 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   The main mistake to avoid is diagnosing based on symptoms instead of what the code indicates.
+*   Driving issues related to P0700 are often wrongly thought to be engine misfires.
+*   It is best to rely on a professional mechanic for an accurate diagnosis.
+<chunk_splitter>
+Code: P0705
+Symptom(s):
+*   Common symptom: noticeable performance problem while driving.
+*   Telltale signs: difficulty shifting gears (harsh or delayed shifts), or being unable to shift into gear.
+*   If the car cannot start when in Park or Neutral.
+*   Or can start in any other gear, it signals a problem.
+*   The Transmission Range sensor is a safety feature.
+<chunk_splitter>
+*   The Check Engine Light might also display.
+*   See irregular, strange, or no indicator lights for gears on the dashboard.
+*   If your reverse lights don't come on in reverse, this can be a symptom.
+Cause(s):
+*   (Source does not provide Causes for P0705)
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Various possible causes make diagnosis complicated.
+*   First things technicians check: the transmission fluid level and condition.
+*   If fluid and transmission okay, they inspect the electrical connection on the Transmission Range Sensor (TRS) for voltage and ground.
+<chunk_splitter>
+*   If the TRS is outside the transmission, bad connections from moisture or debris can occur. The technician will re-establish the connection.
+*   Inspect the TCM and PCM computers and replace any showing visible damage.
+*   Next step requires two technicians.
+<chunk_splitter>
+*   One checks voltage/ground at the TRS while another shifts gears to verify correct voltage output for each gear.
+*   Helps determine if wiring, sensor, or TCM is at fault.
+<chunk_splitter>
+Code: P0711
+Symptom(s):
+*   Illuminated check engine or warning light.
+*   Smell or see smoke from overheating transmission fluid.
+*   Other symptoms are gears slipping.
+*   Transmission getting stuck in gear.
+*   The car activating "limp mode".
+<chunk_splitter>
+Cause(s):
+*   Can be caused by low transmission fluid volume.
+*   Contaminated transmission fluid.
+*   A faulty transmission temperature sensor.
+*   A defective PCM computer.
+Diagnosis Next Step(s):
+*   A P0711 tells the mechanic there's a transmission problem.
+*   They will check the transmission fluid volume and quality.
+*   The transmission pan is inspected for debris or leaks.
+*   If debris found, the transmission might need an overhaul.
+<chunk_splitter>
+*   Wiring and connectors are visually checked.
+*   The transmission temperature sensor is tested for voltage and resistance.
+*   The PCM computer electrical connector is removed to test resistance and check the circuit between the sensor and PCM.
+<chunk_splitter>
+Code(s): P0731, P0732, P0733, P0734, P0735
+Symptom(s):
+*   Symptoms vary a lot.
+*   Might be barely noticeable or cause significant transmission malfunction.
+*   Vehicle shifting improperly, sometimes refusing to shift.
+*   Gear shift might slip.
+*   Worse fuel economy.
+*   Even without other issues, you will likely see the check engine light turn on.
+<chunk_splitter>
+Cause(s):
+*   Many different reasons.
+*   The gear shift solenoid for the specific gear might be defective. Faulty solenoid is a mechanical issue.
+*   Issues with the forward clutch or valve body.
+*   One of the more common problems is issues with your transmission fluid.
+*   If levels are low or it's dirty, hydraulic passages can be blocked.
+*   Rare cases: a bad battery or even a PCM malfunction.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   You might accidentally look for things that aren't the problem (e.g., engine misfires or internal transmission issues).
+*   The diagnostic process can be difficult.
+*   Most people recommend getting expert assistance.
+*   Sometimes simple: cleaning dirty fluid.
+*   Other times: fixing an electrical issue or finding a leak.
+<chunk_splitter>
+*   Repair steps depend on the cause and your vehicle.
+*   If your scanner shows one of these codes, talk to an expert to avoid common mistakes.
+<chunk_splitter>
+Code: P0741 (and P074X codes)
+Symptom(s):
+*   The most common symptom is the check engine light.
+*   Sometimes, though rarely, there are no symptoms.
+*   Symptoms most noticeable while driving.
+*   Including worse fuel economy, stalling, misfire-like symptoms.
+*   Being unable to shift into a higher gear at high speeds.
+<chunk_splitter>
+Cause(s):
+*   Many common causes for P074X codes; all are serious.
+*   Can include a faulty valve body.
+*   Faulty Torque Converter Clutch (TCC).
+*   Faulty torque converter lockup solenoid.
+*   A short in the TCC solenoid.
+*   Damaged wiring to the TCC.
+*   A faulty transmission control module.
+*   A faulty engine coolant temperature sensor.
+<chunk_splitter>
+*   Sometimes, causes can also include damage to the transmission wiring harness.
+*   Or blocked hydraulic passages from dirty transmission fluid.
+*   Whatever the cause, it's crucial to understand how serious these codes are.
+Diagnosis Next Step(s):
+*   A P0741 code can be very difficult to diagnose.
+*   You need to check all the transmission wiring, the TCM computer, and the TCC solenoids.
+*   You also need to understand the transmission pan might have to be removed.
+<chunk_splitter>
+*   If a faulty TCC solenoid or valve body is the problem, the TCC might need replacing.
+*   All diagnostic processes and repairs are best left to qualified mechanics.
+<chunk_splitter>
+Code: P0745
+Symptom(s):
+*   Symptoms may include: transmission slippage during shifts.
+*   Overheating.
+*   Transmission lockups.
+*   Poor fuel economy.
+*   The check engine light or limp mode activating.
+*   Can stop your car from starting or shifting gears smoothly.
+*   Producing toxic gas emissions.
+<chunk_splitter>
+Cause(s):
+*   A common cause is a defective valve body or pressure solenoid.
+*   Can also be caused by faulty wiring.
+*   Another possible trigger is dirty transmission fluid that blocks hydraulic passages.
+*   Most solenoid problems happen because debris blocks mechanical parts.
+*   Too many metal particles in the pan could lead to transmission failure.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   It is easy to diagnose this code if you have proper diagnostic tools and a technical guide for your specific vehicle.
+*   If the scanner shows P0745, record freeze frame data before clearing codes and trying to recreate conditions.
+*   Watch scan data to see if the PCM communicates with the pressure control solenoid.
+*   If it doesn't respond, that confirms the issue.
+<chunk_splitter>
+*   Next step is checking electrical flow to/from the solenoid for continuity.
+*   Check if voltage readings are within range.
+*   Use a pressure gauge to check the solenoid's performance.
+*   Do a visual inspection of the transmission fluid; it should be clear and reddish.
+*   If brown or dirty, replace immediately.
+<chunk_splitter>
+Code: P0758
+Symptom(s):
+*   A P0758 code might show: difficulty shifting from second to third gear.
+*   Reduced fuel efficiency.
+*   Transmission slipping or overheating.
+*   Transmission getting stuck in gear.
+*   Activated limp mode.
+*   Illuminated check engine light.
+<chunk_splitter>
+Cause(s):
+*   Causes include a damaged solenoid B.
+*   Loose or shorted wiring or connectors.
+*   A faulty valve body.
+*   Low transmission fluid.
+Diagnosis Next Step(s):
+*   An OBD-II scanner checks for codes.
+*   A qualified mechanic records data, clears codes, and test drives to reproduce symptoms.
+*   Driving at 15-35 mph helps confirm the problem is with shift solenoid B.
+<chunk_splitter>
+*   The mechanic ensures the transmission fluid level is correct and checks for contaminants.
+*   Visually inspect wiring for wear or fraying.
+*   Connectors checked for attachment, corrosion, or damaged pins.
+*   Transmission linkage examined.
+*   Specific vehicle problems require advanced equipment.
+<chunk_splitter>
+*   A digital multimeter can be used.
+*   Continuity checks should read 0 ohms unless specified otherwise.
+*   Resistance or no continuity means open or shorted wiring needing repair.
+<chunk_splitter>
+Code: P0765
+Symptom(s):
+*   First symptom is likely the check engine light.
+*   A transmission code can also cause severe shifting issues.
+*   You might see transmission slipping.
+*   Transmission getting stuck in a specific gear.
+*   Generally rough shifting.
+*   In some cases, your vehicle might enter Limp Mode.
+<chunk_splitter>
+*   Due to inefficient shifting, you could also notice worse fuel economy.
+Cause(s):
+*   The P0765 code is extremely broad.
+*   Here are a few causes you might see... (list not provided).
+*   You need to go through advanced steps to find the core problem.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing transmission issues is always quite complex.
+*   Whether checking the shift solenoid circuit, filter, pump, or something else.
+*   Potentially dozens or hundreds of reasons this code could appear.
+*   Doesn't include issues from other codes.
+*   If you're not confident, it's best to get help from a qualified expert.
+<chunk_splitter>
+Code: P0777
+Symptom(s):
+*   Common symptoms vary dramatically.
+*   You might see erratic, delayed, or harsh shifts.
+*   The transmission might slip or get stuck in a specific gear.
+*   The transmission might also overheat.
+*   You could see lower fuel economy.
+<chunk_splitter>
+*   Vehicle might go into "Limp Mode" (limiting speed, turning off AC).
+*   No matter what symptoms, you will see the check engine light or transmission warning light turn on.
+Cause(s):
+*   Often has to do with other issues in your transmission.
+*   Low transmission fluid levels or dirty fluid with debris.
+*   If not that, a defective transmission pump or a blocked pressure passage.
+<chunk_splitter>
+*   The pressure control solenoid itself might also be faulty.
+*   Or you could have damaged wiring and electrical connections.
+*   Rare: TCM or ECU might be faulty (exceptionally rare).
+Diagnosis Next Step(s):
+*   Diagnosing this code could be very difficult or very easy.
+*   Sometimes a transmission fluid flush might fix it (easy).
+*   If faulty pump, corroded wiring, etc., might be harder without misdiagnosing.
+*   This is where an expert can help diagnose correctly the first time.
+<chunk_splitter>
+Code: P0785
+Symptom(s):
+*   Most notable: transmission may have difficulty shifting properly.
+*   Delayed, harsh, or erratic shifts.
+*   Slipping through gears.
+*   Getting "stuck" in a gear.
+*   The transmission overheating.
+*   Vehicle might refuse to move in certain gears.
+*   Some vehicles may enter Limp Mode.
+<chunk_splitter>
+*   You might also see increased fuel consumption.
+*   No matter what driving symptoms you notice, the check engine light will turn on.
+Cause(s):
+*   Several problems can cause this code.
+*   Low or dirty transmission fluid is one of the most common.
+*   Refilling or changing the fluid can sometimes fix it.
+*   If not fluid, there might be frayed wiring or damaged connectors in the solenoid or harness.
+*   You could also have a faulty shift timing solenoid.
+*   Very rare: TCM or ECU failed (shouldn't be first guess).
+<chunk_splitter>
+Total 29 + 74 = 103 tokens. Splitter before Cause(s).Cause(s):
+*   Several problems can cause this code.
+*   Low or dirty transmission fluid is one of the most common.
+*   Refilling or changing the fluid can sometimes fix it.
+*   If not fluid, there might be frayed wiring or damaged connectors in the solenoid or harness.
+*   You could also have a faulty shift timing solenoid.
+*   Very rare: TCM or ECU failed (shouldn't be first guess).
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   It depends on the main problem.
+*   If you've worked on your car, you can check for low or dirty fluid.
+*   Might be able to diagnose and fix yourself if that's the case.
+*   If electrical wiring, transmission damage, or solenoid problems, it can be harder.
+<chunk_splitter>
+*   In these cases, unless you are exceptionally knowledgeable, it's best to get help from an expert.
+<chunk_splitter>
+Code: P0934
+Symptom(s):
+*   Commonly notice serious drivability issues when PCM/ECM can't control hydraulic pressure.
+*   Sets your vehicle's pressure control solenoid to a default setting.
+*   Can cause harsh shifting at low engine speeds.
+*   Delayed or soft shifting at higher speeds.
+<chunk_splitter>
+*   You might have less acceleration power or the engine might rev higher.
+*   Symptoms can vary depending on any temporary computer solution.
+*   ECM might tell the transmission to start in 2nd gear or not shift higher.
+*   You should definitely see the check engine light turn on.
+<chunk_splitter>
+Cause(s):
+*   The most common cause is usually damage to the wiring or connectors.
+*   Including blown fuses.
+*   A faulty hydraulic pressure sensor circuit is another possibility.
+*   A bad transmission pressure sensor can also cause this.
+*   Rare cases: PCM, ECM, or TCM computers can have issues (very uncommon).
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   The P0934 code is often difficult to diagnose.
+*   Transmission codes are typically difficult for DIYers.
+*   Code is complex, problem is serious.
+*   Diagnosis often requires special information and tools.
+*   It's usually best to get an expert to help.
+<chunk_splitter>
+Code: P0965
+Symptom(s):
+*   You might see many symptoms.
+*   Includes transmission problems like overheating, slipping, and harsh shifting.
+*   Generally, you might use more fuel.
+*   You might hear and feel symptoms similar to engine misfires.
+*   In some cases, the PCM computer might put the transmission into Limp Mode.
+*   You should also see the check engine light turn on.
+<chunk_splitter>
+Cause(s):
+*   Similar to symptoms, there are many potential causes.
+*   Here are just a few you might need to consider... (list not provided).
+*   The problem might also be a faulty PCM computer in rare cases (extremely uncommon).
+Diagnosis Next Step(s):
+*   Large number of potential causes should tell you this is a challenging code to diagnose.
+*   Common repairs: replacing faulty parts, cleaning corrosion, replacing bad wiring, flushing fluid, changing filter.
+*   Must avoid misdiagnosing as a misfire or internal transmission problem.
+*   If you have little experience, getting expert's help is best.
+<chunk_splitter>
+Total 35 + 67 = 102 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   Large number of potential causes should tell you this is a challenging code to diagnose.
+*   Common repairs: replacing faulty parts, cleaning corrosion, replacing bad wiring, flushing fluid, changing filter.
+*   Must avoid misdiagnosing as a misfire or internal transmission problem.
+*   If you have little experience, getting expert's help is best.
+<chunk_splitter>
+Code: P1101
+Symptom(s):
+*   Most common symptom is the PCM setting the Check Engine Light.
+*   Visible symptoms are poor engine performance.
+*   Engine idling erratically when you start it.
+*   Engine power comes and goes, and reduced power while driving.
+<chunk_splitter>
+*   Can cause your engine to stall when stopped.
+*   See a decrease in fuel economy because the engine runs rich.
+Cause(s):
+*   Several things can lead to this code, including a faulty MAF sensor.
+*   Bad connectors or wiring in the MAF sensor harness.
+*   Air restrictions or blockages before the sensor.
+*   A bad electrical connection in the MAF circuit.
+*   Dirt or oil on the MAF sensor elements.
+*   Corroded or damaged wiring to/from the sensor.
+*   Most uncommonly, a defective or damaged PCM computer.
+<chunk_splitter>
+Total 24 + 81 = 105 tokens. Splitter before Cause(s).Cause(s):
+*   Several things can lead to this code, including a faulty MAF sensor.
+*   Bad connectors or wiring in the MAF sensor harness.
+*   Air restrictions or blockages before the sensor.
+*   A bad electrical connection in the MAF circuit.
+*   Dirt or oil on the MAF sensor elements.
+*   Corroded or damaged wiring to/from the sensor.
+*   Most uncommonly, a defective or damaged PCM computer.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   A qualified technician visually inspects the MAF sensor wiring harness, wires, connectors, and other parts.
+*   Check the air filter for debris.
+*   Clear the code and scan again.
+*   If it returns, download freeze frame data and other codes.
+*   Remove and check if the MAF sensor is clean.
+<chunk_splitter>
+*   Perform a smoke test to check for vacuum leaks before or after the sensor.
+*   If no leaks, test the MAF sensor for proper voltage and ground using a multimeter.
+*   If no voltage/ground, disconnect PCM and check MAF sensor/circuits for continuity.
+*   Clear the code and retest.
+<chunk_splitter>
+Code: P1151
+Symptom(s):
+*   Most of the time, this code doesn't have many symptoms, if any.
+*   You can assume the P1151 code will turn on the check engine light.
+*   Might be no other symptoms because it involves a sensor looking for issues *before* they cause serious engine concerns.
+<chunk_splitter>
+Cause(s):
+*   Various possible causes.
+*   Can appear due to a lean condition (not enough fuel).
+*   Issues like a vacuum leak, fuel injector problems, or a fuel pressure regulator issue.
+*   Low fuel pressure.
+*   Faulty sensors (oxygen (O2) sensor on bank 2 or mass airflow (MAF) sensor).
+*   Rarely, a defective powertrain control module (PCM) (very uncommon).
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing this code can be very straightforward, but it can also take a very long time.
+*   There's a long list of reasons: electrical, fuel, or basic engine issues.
+*   Problems range from simple fixes (e.g., too much oil) to more difficult ones (e.g., camshaft timing issues).
+*   Reasons why most DIYers let an expert take care of it.
+<chunk_splitter>
+Code(s): P1153, P1154
+Symptom(s):
+*   Symptoms vary greatly depending on whether the engine is running too lean (P1153) or too rich (P1154).
+*   Lean problems: low power, backfires/popping, sometimes the car won't start.
+*   Rich problems: poor fuel efficiency, a strong smell, and difficulty idling.
+*   The car will also show the check engine light active.
+<chunk_splitter>
+Cause(s):
+*   The causes are the same as with most lean and rich conditions.
+*   Problem with the vehicle's ability to control fuel.
+*   Or an issue with the ability to detect the current air/fuel ratio.
+Diagnosis Next Step(s):
+*   Information about these codes is hard to find.
+*   Very likely the problem is deep within the engine.
+*   Instead of trying to diagnose it yourself, it's better to take your vehicle to an expert.
+*   An expert will be able to understand and help you fix it more quickly and thoroughly.
+<chunk_splitter>
+Total 39 + 61 = 100 tokens exactly in this chunk.Code: P1167
+Symptom(s):
+*   If your car has this code, it may show some or all of the following symptoms... (list not provided).
+Cause(s):
+*   Sensor 1 interacts with dirt, fuel, grime, debris. These can damage or interfere with the sensor.
+*   Additional factors that can cause your Air/Fuel (A/F) sensor to malfunction include... (list not provided).
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   This code is rather easy to diagnose as it affects a specific sensor.
+*   Has obvious symptoms like excessive smoke and reduced gas mileage.
+*   To reduce misdiagnosis, it's better to have a professional do the inspection.
+*   They'll have the tools and know where to check.
+<chunk_splitter>
+*   First step is testing the sensor's voltage with a multimeter. If readings don't match, the sensor is faulty.
+*   Check the sensor's wiring for stripped or damaged wires, and loose connections.
+*   If both sensor and wiring are fine, the problem could be in the ECU or PCM.
+*   A good technician checks those too.
+<chunk_splitter>
+Code(s): P1271, P1272, P1273, P1274, P1275, P1276, P1277, P1278
+Symptom(s):
+*   The check engine light is always a prominent symptom.
+*   Many vehicles don't have significant symptoms beyond the light, especially if only one cylinder has problems.
+*   If you do notice issues, it will likely be a rough-running engine, general engine misfires, and poor fuel economy.
+<chunk_splitter>
+Cause(s):
+*   The two most common causes are issues with a defective fuel injector.
+*   Problems with the connection between the fuel injector and the electrical circuit.
+*   Corroded wiring and poor connections on one side are very common.
+*   Rare: a problem with the PCM (most commonly software update issue).
+Diagnosis Next Step(s):
+*   The diagnosis process can be difficult because the circuit isn't always easy to understand.
+*   Wiring is more complex than many other parts.
+*   If you are at all uncertain about your ability to handle wiring, then it's best just to talk to an expert.
+<chunk_splitter>
+Total 59 + 52 = 111 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   The diagnosis process can be difficult because the circuit isn't always easy to understand.
+*   Wiring is more complex than many other parts.
+*   If you are at all uncertain about your ability to handle wiring, then it's best just to talk to an expert.
+<chunk_splitter>
+Code: P1299
+Symptom(s):
+*   It's very common to see no symptoms beyond simply a check engine light.
+*   If symptoms noticed, very slight: engine taking a long time to start, general performance issues, lower fuel efficiency.
+*   If problem continues (especially in hotter temperatures): vehicle entering limp mode.
+*   Engine shutting down in extreme cases.
+<chunk_splitter>
+Cause(s):
+*   Many reasons; doesn't happen due to one specific cause.
+*   Simply because the temperature is very high (engine overheating).
+*   The list of causes for engine overheating is extremely long.
+*   Could be: lack of engine coolant, not enough airflow over/through radiator, bad thermostats/sensors, wiring/connector issues, open circuits, water pump problems, exceeding load capacity.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Many, many reasons why your engine might be overheating.
+*   Trying to figure it out yourself can be very difficult.
+*   If simple (low coolant, something stuck), you might fix it.
+*   However, if it's more complex, it's a good idea to get to an expert instead.
+<chunk_splitter>
+Code: P1351
+Symptom(s):
+*   Symptoms often relate to the unstable operation of the engine.
+*   Once at normal temperature, it might start behaving erratically, suddenly turning off, running unstable.
+*   Sometimes refusing to start if it hasn't cooled down.
+*   The check engine light will also turn on.
+<chunk_splitter>
+Cause(s):
+*   Many possible issues.
+*   The crankshaft position sensor (CKP) or camshaft position sensor (CMP) might be damaged, sending inconsistent info to the ICM.
+*   The car battery might not be charged, creating inconsistencies and abnormal voltage.
+*   Issues with the wiring anywhere within the ignition sensors can also be a problem.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   The diagnostic process for this code is often fairly difficult.
+*   If it's the battery, you might fix it by charging it.
+*   But if it's anything else, you'll likely need knowledge of how your vehicle works.
+*   If you're not well-experienced, you should probably take the issue to your local repair shop.
+<chunk_splitter>
+Code: P1381
+Symptom(s):
+*   Typically affects the engine.
+*   You may have trouble starting and experience poor idling.
+*   If bad, the vehicle may stall.
+*   When caused by a misfire, this code can lead to transmission problems.
+*   Like most codes, P1381 will trigger the check engine light.
+<chunk_splitter>
+Cause(s):
+*   Two causes: over-advanced variable camshaft timing and engine misfire.
+*   Over-advanced timing happens when the VVT or VCT system exceeds maximum allowed settings.
+*   Engine misfire here means the PCM computer can't read road conditions, treats decreases in crankshaft speed as misfires.
+*   Usually happens when the PCM loses communication with the BCM.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   A P1381 error code is a bit too complicated without technical knowledge unless you have a scanner.
+*   With a scanner, read data from PCM and ECM.
+*   Experienced pros might look for other codes and reset them.
+*   Do a physical inspection of the VTC solenoid, connector pins, and wiring.
+<chunk_splitter>
+*   If parts are good, check the engine oil; very thick oil doesn't flow well.
+*   Ensure your oil has low viscosity and change it regularly.
+*   If the code persists, check your vehicle's service manual.
+*   You may also want to check if your PCM and ECM are working correctly.
+<chunk_splitter>
+Code(s): P1391, P1392, P1393, P1394
+Symptom(s):
+*   Symptoms can vary.
+*   You might have issues starting your vehicle, including not starting when the engine is cold.
+*   Idling problems, especially in the first few minutes, are common.
+*   Might experience longer cranking times when starting a cold engine.
+*   You'll usually see the check engine light.
+<chunk_splitter>
+Cause(s):
+*   For codes related to low voltage (P1391, P1393): problem often with connectors, wiring, electrical circuits, and battery voltage.
+*   Low overall battery voltage usually comes with other codes.
+*   For high voltage: more likely issues with the glow plug relay or timer.
+*   Engine coolant, oil temperature, or intake air temperature sensors can also be causes.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   The diagnostic process requires many steps and hard work.
+*   For many people, diagnosing these is more than a casual DIYer can handle.
+*   If you are a DIYer, only attempt diagnosis/repair of glow plug codes if you have a service manual and technical information.
+*   Incorrect procedures can damage your entire electrical system.
+<chunk_splitter>
+Code: P1399
+Symptom(s):
+*   The first symptom is the check engine light.
+*   Physical symptoms: trouble starting on a cold start.
+*   If the glow plug control module fails completely, you likely won't be able to start your engine in lower temperatures.
+*   In some cases, your tailpipe might emit white smoke when the engine starts.
+<chunk_splitter>
+Cause(s):
+*   Exact cause varies, but short circuits are usually at the root.
+*   Damaged or corroded wiring connectors are also common.
+*   The glow plug control module is known to trigger this code if damaged or defective.
+*   The wiring leading to this module and the PCM can also cause issues if damaged.
+*   Rarely, a faulty PCM can be the cause (unlikely).
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   First step: pull and record all codes and freeze frame data.
+*   Sensors in the glow plug circuit rely on oil temperature and atmospheric pressure sensors, so check if these are working and damaged.
+*   A technician checks the glow plug control module and its wires/connectors.
+*   Establish the module's ground and input circuits.
+<chunk_splitter>
+*   Inspect each glow plug individually and test how well they are working.
+<chunk_splitter>
+Code: P1441
+Symptom(s):
+*   This code will start with the check engine light.
+*   Symptoms depend on the specific cause.
+*   Overall engine power loss, rough idling, acceleration problems.
+*   Difficulty starting when the engine is already hot.
+*   Severity and consistency vary.
+<chunk_splitter>
+Cause(s):
+*   Number of different causes.
+*   Many first look at the purge control valve itself; if faulty, won't control vapor flow correctly.
+*   Other issues: charcoal canister, leaking vacuum lines, a leaking fuel filler cap, or just issues with connectors and wiring.
+*   This code doesn't tell you the specific problem, which is why it can be exceptionally difficult to figure out.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   The diagnostic process isn't always straightforward.
+*   For many people, it's surprisingly difficult.
+*   Need to be able to check all the vacuum lines, areas where fuel leaks might occur, and all your wiring.
+*   If you're not an expert, this might not come naturally.
+*   Most people recommend talking to a professional instead.
+<chunk_splitter>
+Code: P1810
+Symptom(s):
+*   Symptoms can range dramatically.
+*   Anything from an illuminated check engine light to very hard shifting.
+*   Even your vehicle going into Limp Mode.
+*   Limp Mode will cause features like AC and some lights to stop working.
+*   Whether Limp Mode activates depends on the vehicle.
+<chunk_splitter>
+Cause(s):
+*   Causes depend on which definition your vehicle is using.
+*   If TFP valve problem: most likely poor electrical connection or a short circuit to the TFP Valve Position Switch.
+*   If 4WD Low system issue: a short circuit between the battery and the 4WD Low indicator.
+Diagnosis Next Step(s):
+*   Diagnosis process heavily affected by this code having two different meanings. Both can be very serious.
+*   Important to check the code definition for your vehicle.
+*   May need special equipment, knowledge, and experience a DIY hobbyist is unlikely to have.
+*   Reasons why many people choose to consult an expert.
+<chunk_splitter>
+Total 56 + 66 = 122 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   Diagnosis process heavily affected by this code having two different meanings. Both can be very serious.
+*   Important to check the code definition for your vehicle.
+*   May need special equipment, knowledge, and experience a DIY hobbyist is unlikely to have.
+*   Reasons why many people choose to consult an expert.
+<chunk_splitter>
+Code: P2008
+Symptom(s):
+*   Some vehicles will have no symptoms other than an illuminated check engine light. Sometimes intermittent.
+*   Many vehicles show driving symptoms.
+*   Rougher than normal idle, surging issues, reduced torque at low speeds.
+*   Even hard starts.
+*   Can turn into a no-start condition.
+*   Always deal with this problem early.
+<chunk_splitter>
+Cause(s):
+*   The intake runner control solenoid and swirl flaps are two of the most common causes.
+*   Solenoid often in hot, dirty location, leading to failure.
+*   Swirl flaps can get covered in soot and stuck.
+*   Other problems: broken vacuum lines, poor electrical connection, open or short in the wiring harness.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Multiple possible diagnoses, can make the process more difficult.
+*   Helps that the problem is often with the manifold runner control solenoids or the swirl flaps.
+*   Only replace parts by following the diagnostic flowchart.
+*   Some can diagnose themselves, many will benefit from talking to an expert.
+<chunk_splitter>
+Code: P2101
+Symptom(s):
+*   Possibly the most common symptom is the illuminated check engine light.
+*   Typically also notice driving symptoms.
+*   Fixed idle speed, decreased engine performance, acceleration problems.
+*   Vehicle potentially stuck in Reduced Power or Limp Mode.
+*   Often causes very serious concerns with how your car drives.
+<chunk_splitter>
+Cause(s):
+*   Causes depend significantly on manufacturer.
+*   Very common when issue with a sensor.
+*   Could be a malfunction with the PCM computer, the throttle position sensor, or the accelerator pedal position (APP) sensor.
+*   Issues with the throttle control motor.
+*   An open, short, or high resistance electrical circuit leading to the throttle actuator.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   You may run into problems when diagnosing.
+*   Need an assistant to help you open the throttle body and check it; otherwise, you could damage your car or yourself.
+*   An expert knows how to work through these problems and do it safely.
+<chunk_splitter>
+Code: P2105
+Symptom(s):
+*   Most common symptoms are severe drivability issues.
+*   Almost every time, this code results in the vehicle going into limp mode.
+*   This mode reduces function to minimize potential engine damage.
+*   In limp mode: likely only go under a specific speed, AC might not work.
+*   Likely see the check engine light and possibly other warning lights.
+<chunk_splitter>
+Cause(s):
+*   Most of the time, related to either a sensor malfunction or an actual faulty throttle actuator.
+*   Sensor issues could involve MAP, MAF, APP, throttle position, or throttle plate position sensors.
+*   Could also be related to an issue with your electrical connection (damaged pins, loose connections).
+*   Rare cases: PCM problem possible.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Can be a bit difficult to diagnose.
+*   Issues related to the throttle body/control system are very easy to mess up when trying to fix them yourself.
+*   Common mistakes to avoid.
+*   DIYer diagnosis time likely longer.
+*   Dealing with such an important part, avoid mistakes and get help from expert first and foremost.
+<chunk_splitter>
+Code: P2107
+Symptom(s):
+*   Common symptoms tend to depend on the actual problem and severity. Wide variety of issues.
+*   Here are a few possible symptoms... (list not provided).
+*   In all these cases, the check engine light should turn on.
+*   Very rarely, the light might be the only symptom.
+<chunk_splitter>
+Cause(s):
+*   Like the symptoms, the causes are also quite varied.
+*   Here are a few you might see... (list not provided).
+*   These causes will require more research.
+*   Assume inspection for this code will be quite lengthy.
+Diagnosis Next Step(s):
+*   Diagnosing this code can be quite difficult.
+*   Wide number of possible causes.
+*   Can take a lot longer if you're a DIYer.
+*   Experts know what they're looking for. DIYers may need more work for potentially lower quality results.
+*   Talk to a professional about fixing the core issue.
+<chunk_splitter>
+Total 40 + 69 = 109 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   Diagnosing this code can be quite difficult.
+*   Wide number of possible causes.
+*   Can take a lot longer if you're a DIYer.
+*   Experts know what they're looking for. DIYers may need more work for potentially lower quality results.
+*   Talk to a professional about fixing the core issue.
+<chunk_splitter>
+Code: P2111
+Symptom(s):
+*   The check engine light is prominent.
+*   Variety of other issues: smoke from your tailpipe or high fuel consumption.
+*   Or the car not starting at all or poor performance that gets worse.
+*   Many modern vehicles will enter Limp Mode.
+<chunk_splitter>
+Cause(s):
+*   Especially if vehicle still running normally: throttle position sensor reporting stuck open when it's not.
+*   Alternatively: throttle body dirty or faulty, stopping it from closing.
+*   The throttle actuator control motor might be defective.
+*   The wires connecting parts might be damaged or poorly connected.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   The diagnostic process can be very difficult for this code.
+*   So many possible reasons.
+*   Code doesn't tell you exactly what happened, only issue related to throttle stuck open.
+*   Most generic codes are very difficult for DIYers or hobbyists.
+*   Best to take these codes to an expert for help.
+<chunk_splitter>
+Code: P2118
+Symptom(s):
+*   This code can show serious symptoms.
+*   At worst, the car will not respond to the gas pedal (failsafe mode).
+*   Other issues might include an engine misfire, decreased power, and a persistent Check Engine Light.
+*   Symptoms may appear before the light comes on.
+<chunk_splitter>
+Cause(s):
+*   Most common causes: faulty throttle body.
+*   Dirty throttle plate or linkage.
+*   A dysfunctional throttle position sensor.
+*   A malfunctioning accelerator pedal position sensor.
+*   A damaged or defective throttle actuator control motor.
+*   A broken connector, frayed wiring.
+*   A faulty PCM computer.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Qualified experts use a scanner to check codes from the ECM. Codes tell technicians vehicle condition/order.
+*   Codes cleared, then a test drive is performed. After the drive, scan again.
+*   Important step: checking Technical Service Bulletins (TSBs) for faster diagnosis.
+<chunk_splitter>
+*   Identify all parts related to the Throttle Actuator Control System (throttle body, sensors, motor, PCM).
+*   Do a visual inspection of the wiring for defects.
+*   Check connections for placement, corrosion, and damaged pins.
+*   Inspect the throttle plate by pressing it; clean any dirt behind it.
+<chunk_splitter>
+Code: P2119
+Symptom(s):
+*   Severity can range dramatically.
+*   Start with the check engine light and generally poor performance you might not notice.
+*   More severe problems: poor throttle response.
+*   Potentially a limp mode or a no-start condition.
+<chunk_splitter>
+Cause(s):
+*   Causes vary depending on the malfunction.
+*   The throttle body, throttle position sensor, accelerator pedal position sensor, or throttle actuator control motor could be defective.
+*   Issues with corroded, faulty, or damaged connectors and wiring.
+*   A dirty throttle plate or linkage.
+*   Rare: PCM computer may be faulty.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing this code is often very complicated.
+*   Many possible places the system could have failed.
+*   You need specific technical references for your vehicle and tools like a digital multimeter.
+*   If you're not an expert, diagnosing this could be extremely difficult.
+<chunk_splitter>
+Code(s): P2127, P2128
+Symptom(s):
+*   You should expect to see the check engine light.
+*   Beyond the light, different issues depending on the cause.
+*   Could range from the vehicle running poorly and not responding to the throttle.
+*   To stalling issues and an overall lack of power.
+*   Can lead to the car not starting or going into Limp Mode.
+<chunk_splitter>
+Cause(s):
+*   Often happen because of an issue with the pedal position sensor itself.
+*   Issues can also arise due to an open or short circuit in the wiring harness.
+*   Intermittent electrical connections can also be a problem.
+*   Even a problem with the PCM computer is possible (very uncommon).
+Diagnosis Next Step(s):
+*   The diagnostic process for these codes can be very difficult.
+*   Experts most commonly use tools you likely don't have.
+*   Without necessary tools, exceptionally difficult to understand the real problem.
+*   That's why so many people leave the problem to an expert.
+<chunk_splitter>
+Total 50 + 59 = 109 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   The diagnostic process for these codes can be very difficult.
+*   Experts most commonly use tools you likely don't have.
+*   Without necessary tools, exceptionally difficult to understand the real problem.
+*   That's why so many people leave the problem to an expert.
+<chunk_splitter>
+Code: P2135
+Symptom(s):
+*   One symptom is that you might experience either a surge or hesitation when accelerating.
+*   Happens because voltage readings from the sensors don't match.
+*   The ECM might put your vehicle into "fail-safe mode," limiting acceleration to about 15%.
+*   Your engine continuing to rev even when the gas pedal isn't pressed.
+*   Causes high RPMs and may even cause the vehicle to stall when stopped.
+*   Accompanied by the check engine light coming on.
+<chunk_splitter>
+Cause(s):
+*   Common causes are faulty throttle position sensors or faulty accelerator position sensors.
+*   If either is bad, they send incorrect voltage readings.
+*   A faulty ECM computer can sometimes be the cause.
+*   A break in the circuit for the throttle position sensor (open or shorted wiring).
+*   Any issue in the accelerator pedal position sensor circuit.
+*   Damage to wiring leading to the ECM and cracks in wiring harnesses.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing this involves taking accurate voltage readings of both sensors using a common multimeter.
+*   Readings should be compared to manufacturer's specifications by a professional mechanic.
+*   This is why you should allow experienced mechanics to diagnose your vehicle when this code appears.
+<chunk_splitter>
+Code: P2138
+Symptom(s):
+*   First symptom: a sudden loss of power at cruising speeds.
+*   Next, your vehicle may have trouble accelerating, lose power, and the engine might be unresponsive.
+*   The Check Engine Light will also turn on.
+*   Finally, you may find that the throttle sticks at any engine speed.
+<chunk_splitter>
+Cause(s):
+*   One of the first causes: defective ECM computer.
+*   Circuit problems (spoiled or corroded wires, faulty connections).
+*   Often find a defective throttle position sensor.
+*   A damaged throttle body.
+*   Damaged wiring or sensors for the accelerator pedal.
+*   ECM may need a software update.
+*   Rarer cases: may need to replace the ECM altogether.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   First step: visually inspecting the throttle body, motor, and position sensor.
+*   Qualified technician examines system for electrical circuit issues.
+*   Tests throttle body motor and position sensor following manufacturer process.
+*   Finally, the technician tests the ECM computer.
+<chunk_splitter>
+Code: P2177
+Symptom(s):
+*   Symptoms depend on why you're getting it.
+*   Expect common "lean" symptoms (not enough fuel).
+*   Poor acceleration, lack of power, misfire conditions.
+*   Poor fuel economy, and even stalling while idling.
+*   If fuel delivery parts: heavy fuel consumption, fuel supply issues, starting problems.
+*   This code should also cause the check engine light to turn on.
+<chunk_splitter>
+Cause(s):
+*   Generic code, can come from various sources.
+*   Here are just a few causes... (list not provided).
+*   You might see this code for many reasons.
+Diagnosis Next Step(s):
+*   Diagnosis is incredibly difficult.
+*   Many possible reasons.
+*   Almost impossible with just this code info.
+*   Most of the time, other codes will be present.
+*   Generic code: best to enlist help of expert mechanic.
+<chunk_splitter>
+Code: P2181
+Symptom(s):
+*   Symptoms depend on whether your engine is running too hot or too cold.
+*   Too cold: poor fuel economy and a heater that's hard to warm.
+*   Overheating engines can cause catastrophic damage.
+*   Fuel economy can be low.
+*   Temperature warning light or extreme gauge readings.
+*   The check engine light will likely turn on.
+<chunk_splitter>
+Cause(s):
+*   The most obvious cause: engine not running at the proper temperature.
+*   Can happen if your engine coolant level is too low.
+*   Your thermostat might be stuck open (too cold) or closed (overheats).
+*   Part of your coolant system might not be working.
+*   Possible that the engine coolant temperature sensor is not working right.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   A P2181 code is notoriously very vague.
+*   Doesn't say what's wrong or if the temperature is high or low.
+*   You have a lot of work to do to diagnose it properly.
+*   It's not just about replacing one part.
+<chunk_splitter>
+Code: P2187
+Symptom(s):
+*   This is a very vague code. Symptoms can vary greatly.
+*   The check engine light will come on in basically all cases.
+*   May or may not notice driving issues.
+*   If driving issues: related to idling and starting.
+*   Engine misfiring, hard starting, a rough or high idle, and overall lack of engine power.
+<chunk_splitter>
+Cause(s):
+*   Main cause: the air/fuel mixture is off. The *reason* varies significantly.
+*   Problem with the mass airflow, oxygen, or air-fuel ratio sensor.
+*   Leaks within the vacuum system can cause it.
+*   A weak fuel pump, an exhaust leak, or a clogged fuel filter are other possibilities.
+*   Wide array of reasons makes it difficult to recognize and fix.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing this code can be very difficult.
+*   Many potential reasons, so you should go through all steps.
+*   DIYers often replace a sensor that isn't even bad. Potentially causing more problems.
+*   This is generally not a great code for absolute beginners.
+<chunk_splitter>
+Code(s): P2188, P2189
+Symptom(s):
+*   When there's too much air (engine running rich), moderate to severe issues with engine function.
+*   Engine being very difficult to start, especially when hot.
+*   Engine might misfire whenever you leave it to idle.
+*   Engine may also hesitate when you press the throttle.
+*   You should also notice the check engine light turning on.
+<chunk_splitter>
+Cause(s):
+*   Number of things can cause these codes. Any issue can lead to air/fuel ratio problems.
+*   Exhaust system leak.
+*   Faulty MAP sensor possible.
+*   Vacuum leak.
+*   Loose intake manifold, faulty oxygen sensor, weak fuel pump, pinched or clogged fuel line.
+*   Mechanical problem with a fuel injector. Not a complete list.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   The diagnosis process is often very difficult due to the sheer number of potential causes.
+*   You might not even know where to start.
+*   An expert can look at other problems, symptoms, and experience to make educated guesses and fix the underlying problem.
+<chunk_splitter>
+Code: P2195
+Symptom(s):
+*   Typically, you'll first notice issues with how air and fuel get into the engine; won't run as smoothly.
+*   See excessive smoke from the exhaust.
+*   Could have lower fuel economy.
+*   Misfiring and overheating are possible.
+*   You'll have a check engine light that won't go away.
+<chunk_splitter>
+Cause(s):
+*   Two main reasons: active problem with air and fuel feeding.
+*   Or engine interprets the oxygen reading faulty.
+*   Feeding problem: a leak in the vacuum system, exhaust, or fuel injector.
+*   Interpretation issue: frayed/broken oxygen sensor connections/wiring, or an ECM issue.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosis can be more difficult than it seems.
+*   Important for an expert to check if the fuel-to-air ratio is actually off. Then proceed with other fixes.
+*   First step: figure out the real problem. Two main possibilities: ratio is wrong, or sensors give incorrect readings.
+*   Best to leave these problems to a technical expert.
+<chunk_splitter>
+Code: P2201
+Symptom(s):
+*   Increased emissions often the most common symptom.
+*   See inconsistent fuel economy.
+*   An erratic idle and excessive smoke from the exhaust are also common.
+*   Expect the check engine light to turn on (some vehicles need multiple reports).
+<chunk_splitter>
+Cause(s):
+*   Main cause is simply a defective or damaged NOx sensor.
+*   Area on a diesel engine often dirty; dirty sensor pickup common.
+*   Excessive soot buildup can cause problems.
+*   Damaged wiring and connector issues can also cause it.
+*   An internal issue with the PCM or ECM computer (uncommon).
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnosing this code can be tricky.
+*   Problem often soot buildup; need to know how to test underneath it.
+*   Might need to check wiring/other sensors (not always easy for DIYers).
+*   Diagnosing isn't exceptionally easy.
+*   Many people get help from a professional mechanic.
+<chunk_splitter>
+Code(s): P2285, P2286, P2287
+Symptom(s):
+*   Many possible symptoms.
+*   You should see the check engine light turn on.
+*   Can cause serious drivability concerns.
+*   Symptoms might include general engine performance issues.
+*   Rough running and hard starting.
+*   Could get worse and lead to the car not starting at all.
+<chunk_splitter>
+Cause(s):
+*   Generic codes, so the cause can vary.
+*   Simply very low engine oil.
+*   As serious as a defective PCM (exceptionally rare).
+*   Other common causes: issues with the oil pump, ICP sensor, or IPR.
+*   Wiring problems are also possible.
+Diagnosis Next Step(s):
+*   These three codes can be very difficult to diagnose.
+*   Generic, set on many different vehicles.
+*   There might be an oil pressure problem within the lubrication system. Needs extensive diagnostic process.
+*   If can't fix by simply adding oil, issue might be extensive.
+*   Best to get help from an expert.
+<chunk_splitter>
+Total 53 + 67 = 120 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   These three codes can be very difficult to diagnose.
+*   Generic, set on many different vehicles.
+*   There might be an oil pressure problem within the lubrication system. Needs extensive diagnostic process.
+*   If can't fix by simply adding oil, issue might be extensive.
+*   Best to get help from an expert.
+<chunk_splitter>
+Code: P2291
+Symptom(s):
+*   Most common symptoms involve fuel injection.
+*   Refers to injector control pressure while cranking.
+*   Often results in a no-start condition.
+*   Engine may stall while running.
+*   See excessive smoke from the exhaust.
+*   Even hear peculiar noises from the engine.
+*   See the check engine light turn on.
+<chunk_splitter>
+Cause(s):
+*   Problems with the high-pressure injection pressure switch are most common.
+*   Issues with the switch or open/shorted circuits.
+*   Sometimes, topping off the engine oil level can fix the problem.
+*   A wiring or connection issue can also create this code.
+Diagnosis Next Step(s):
+*   It depends on the underlying problem.
+*   First step: check the engine's oil level and any other codes. Adding oil might fix it.
+*   If codes about oil pressure, fixing those might fix this one.
+*   If elsewhere, diagnosis tricky.
+<chunk_splitter>
+Total 53 + 58 = 111 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   It depends on the underlying problem.
+*   First step: check the engine's oil level and any other codes. Adding oil might fix it.
+*   If codes about oil pressure, fixing those might fix this one.
+*   If elsewhere, diagnosis tricky.
+<chunk_splitter>
+*   High-pressure injection: shouldn't try to fix yourself (dangerous).
+*   Talk to an expert.
+<chunk_splitter>
+Code: P2293
+Symptom(s):
+*   Symptoms vary based on fuel pressure and reason.
+*   Generally, expect poor engine performance.
+*   Excessive fuel consumption, poor acceleration, and hesitation.
+*   Engine might stall or fail to start if bad enough.
+*   Some vehicles may experience Limp Mode.
+*   Symptoms worsen over time.
+*   The check engine light will also usually turn on.
+<chunk_splitter>
+Cause(s):
+*   Several possible causes mostly concern the actual fuel system.
+*   Here are a few common causes... (list not provided).
+*   PCM failure exceptionally uncommon.
+*   Must be ready to check any during diagnosis.
+*   Checking dirty connections, false reading, signal wire, scan tool for other codes helps.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Many possible diagnoses throughout fuel system.
+*   Problems with the fuel pressure sensor, regulator, filter, injector, pump, and many other parts.
+*   If not completely confident you can examine all these parts and find the solution.
+*   Take your vehicle to a certified mechanic for complete repair steps.
+<chunk_splitter>
+Code: P2308
+Symptom(s):
+*   Common symptoms usually relate to problems with your air/fuel mixture not burning properly.
+*   Might include engine misfire, diminished engine performance, and reduced fuel efficiency.
+*   The PCM computer might also turn off the fuel injector for this specific cylinder.
+*   This code often appears with other related codes.
+*   Expect the check engine light turn on.
+<chunk_splitter>
+Cause(s):
+*   Can happen for various reasons. Many components in the ignition coil system.
+*   Here are a few problems to look out for... (list not provided).
+*   PCM failure exceptionally rare.
+*   All these could result in code.
+Diagnosis Next Step(s):
+*   Many possible causes across many different systems.
+*   Makes diagnosing this code extremely difficult.
+*   Without knowledge/extra codes, accurate diagnosis very difficult.
+*   Requires special equipment, lots of time, keen eye.
+<chunk_splitter>
+Total 47 + 59 = 106 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   Many possible causes across many different systems.
+*   Makes diagnosing this code extremely difficult.
+*   Without knowledge/extra codes, accurate diagnosis very difficult.
+*   Requires special equipment, lots of time, keen eye.
+<chunk_splitter>
+*   Figuring out the problem associated with this code is very difficult in many cases.
+*   So, finding an experienced mechanic might be your best option.
+<chunk_splitter>
+Code: P2433
+Symptom(s):
+*   Several common symptoms.
+*   In some cases: only issues with emissions process. Often won't cause drivability problems; only check engine light.
+*   Other cases: stalling, rough idling, hard starting.
+*   Noise from the SAI system.
+*   Poor engine performance. Much depends on actual cause.
+<chunk_splitter>
+Cause(s):
+*   Code indicates general malfunction in the SAI (Secondary Air Injection) system; doesn't tell you specifically where.
+*   Many possible causes, including any of these... (list not provided). This isn't a complete list.
+Diagnosis Next Step(s):
+*   Can be fairly difficult to diagnose. Code is so broad.
+*   Many possible issues: air system pressure sensor, air control solenoid valve, a defective one-way check valve, or even the secondary air injection pump.
+*   You need to go through all the diagnostics.
+*   If you don't know how to check for possible causes, it's best to talk to an experienced mechanic.
+<chunk_splitter>
+Total 49 + 72 = 121 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   Can be fairly difficult to diagnose. Code is so broad.
+*   Many possible issues: air system pressure sensor, air control solenoid valve, a defective one-way check valve, or even the secondary air injection pump.
+*   You need to go through all the diagnostics.
+*   If you don't know how to check for possible causes, it's best to talk to an experienced mechanic.
+<chunk_splitter>
+Code: P2459
+Symptom(s):
+*   DPF regeneration is critical.
+*   Symptoms may include excessive black smoke from the exhaust.
+*   Inability to maintain correct engine speed (RPM).
+*   Increased engine temperature.
+*   Overheating in the DPF housing or other exhaust parts.
+*   Excessive black smoke usually from too much soot.
+*   Other DPF codes also frequently appear.
+*   The check engine light should also turn on.
+<chunk_splitter>
+Cause(s):
+*   Can happen simply because of too many short trips in a diesel (DPF regen happens while cruising).
+*   Underlying issue possible: any of these... (list not provided). Any of these can result in this code.
+*   Finding and fixing the issue is extremely important.
+Diagnosis Next Step(s):
+*   It depends on the cause.
+*   Easiest problems to diagnose: low diesel exhaust fluid and the need to manually run regeneration. You can fix these with little knowledge.
+*   If electrical issues or broken regen system part, need to figure out problem/fix.
+*   A professional mechanic can help you fix this code more effectively.
+<chunk_splitter>
+Total 44 + 68 = 112 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   It depends on the cause.
+*   Easiest problems to diagnose: low diesel exhaust fluid and the need to manually run regeneration. You can fix these with little knowledge.
+*   If electrical issues or broken regen system part, need to figure out problem/fix.
+*   A professional mechanic can help you fix this code more effectively.
+<chunk_splitter>
+Code: P2463
+Symptom(s):
+*   Many symptoms.
+*   Expect the check engine light.
+*   Vehicle may experience a loss of engine power (sometimes Limp Mode).
+*   See a marked increase in fuel consumption or black smoke.
+*   This code will also cause the vehicle to fail an emissions test.
+<chunk_splitter>
+Cause(s):
+*   Many causes.
+*   Most common: excessive accumulation of soot particles needs cleaning.
+*   Other issues: DPF pressure sensor or its wiring/connectors.
+*   Can happen because of another unaddressed code (frequently related to exhaust temperature).
+*   Occasionally, the EGR valve or issues with oil level and pressure.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Diagnostic process/repair steps are often very difficult, especially for beginners.
+*   Diesel exhaust emission control system isn't very intuitive.
+*   DIYers often don't understand it and waste time/money.
+*   If you don't think you have the skills, always contact a professional.
+<chunk_splitter>
+Code: P2757
+Symptom(s):
+*   Likely experience common transmission symptoms.
+*   Harsh, erratic shifting, shift slipping.
+*   Engine stalling or refusing to move when in gear.
+*   Can also cause the transmission to overheat.
+*   Some vehicles may engage "Limp Mode".
+*   May also use more fuel.
+*   Regardless, you should see the check engine light turn on.
+<chunk_splitter>
+Cause(s):
+*   There are several reasons for this code. When diagnosing, you may need to look for any mechanic. (Source text is incomplete here).
+Diagnosis Next Step(s):
+*   (Source does not provide Diagnosis Next Steps for P2757)
+<chunk_splitter>
+Code: P2764
+Symptom(s):
+*   Many symptoms, primarily with your transmission.
+*   Harsh, erratic shifting and shift slipping.
+*   When in gear, engine may stall or refuse to move.
+*   Can lead to transmission overheating.
+*   Some vehicles may engage "Limp Mode".
+*   Common to see increased fuel consumption.
+*   Expect to see the check engine light.
+<chunk_splitter>
+Cause(s):
+*   See this code for all sorts of reasons. Mustn't overlook any while diagnosing.
+*   Here are a few causes you may need to check... (list not provided).
+*   Some are more likely, but understanding all is important.
+Diagnosis Next Step(s):
+*   Diagnosis for this code can be extremely difficult.
+*   How many potential causes exist.
+*   Not as easy as checking one or two things. May need to check dozens of spots.
+*   Many people choose to get help from a certified mechanic.
+<chunk_splitter>
+Total 45 + 59 = 104 tokens. Splitter before Diagnosis Next Step(s).Diagnosis Next Step(s):
+*   Diagnosis for this code can be extremely difficult.
+*   How many potential causes exist.
+*   Not as easy as checking one or two things. May need to check dozens of spots.
+*   Many people choose to get help from a certified mechanic.
+<chunk_splitter>
+Code: P2859
+Symptom(s):
+*   The first symptom is likely the check engine light.
+*   Fairly uncommon to see significant driving problems.
+*   Code means it had some issue with smoothly disengaging.
+*   If any other symptoms, they'll often be minor issues with gear shifting.
+Cause(s):
+*   Many possible causes.
+*   This code is extremely vague.
+*   Problem could be anything from engine load concerns to hydraulic pressure.
+*   Not a complete list, but here are a few causes you might look for... (list not provided). (Note: [153, P3404] appears to be a source artifact here)
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   (Source does not provide Diagnosis Next Steps for P2859)
+<chunk_splitter>
+Code: P3404
+Symptom(s):
+*   Symptoms rarely extremely disabling.
+*   Most commonly: the check engine light turn on (sometimes only sign).
+*   System reduces engine power for fuel use, so may see decreased engine performance, increased fuel consumption, or both.
+*   Engine defaults to 8 cylinders, turns off injector for faulty cylinder.
+<chunk_splitter>
+Cause(s):
+*   Low engine oil level is a very common cause.
+*   Vehicle uses oil pressure for hydraulic valve lifters that turn cylinders on/off.
+*   If oil too low, not enough pressure.
+*   Other possible causes: issue with cylinder displacement solenoid.
+*   General wiring problems.
+*   Cramped oil passages.
+<chunk_splitter>
+*   A bad oil pressure sensor.
+*   Defective variable valve timing solenoids.
+*   Open or shorted cylinder deactivation circuits.
+*   A compressed exhaust system.
+*   An unlocked solenoid wiring harness.
+*   PCM computer issues.
+*   Even mechanical problems with the engine.
+<chunk_splitter>
+Diagnosis Next Step(s):
+*   Often depends on the underlying cause.
+*   If low oil, adding oil might fix it.
+*   ECM might activate other codes.
+*   These are typically the only symptoms.
+*   Subtle issue most won't notice until catastrophic engine failure. Staying alert is a good first step.
+<chunk_splitter>
+*   This code can be quite difficult for a casual DIYer.
+*   Basic repair: check if your engine oil level is correct.
+*   Might need to do a manual oil pressure test.
+*   Take your car to a repair shop for more complicated repairs. Experts have the right scan tools. Might save your engine from total failure.
+<chunk_splitter>
+Code: U0101
+Symptom(s):
+*   Typically, you'll find issues with a vehicle's transmission.
+*   General transmission performance problems.
+*   Vehicle might refuse to shift out of a specific gear.
+*   Or just an illuminated check engine light that won't go away.
+*   Why checking the light is important, even if no problems are obvious.
+<chunk_splitter>
+Cause(s):
+*   This code happens because the problem can be much more difficult. (Source text is incomplete here).
+*   Many reasons. Need to know how to find and fix the problem.
+*   Instead of trying yourself (dangerous), talk to a professional and let them diagnose it.
+Diagnosis Next Step(s):
+*   (Source does not provide specific Diagnosis Next Steps for U0101).
