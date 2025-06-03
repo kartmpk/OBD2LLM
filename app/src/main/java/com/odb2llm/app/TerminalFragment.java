@@ -30,8 +30,12 @@ import java.util.ArrayDeque;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import com.odb2llm.app.ChatViewModel;
+
 public class TerminalFragment extends Fragment implements ServiceConnection, SerialListener {
 
+    private int lastAppendedLength = 0;
+    private String previousResponse = "";
     private enum Connected { False, Pending, True }
     private ExecutorService executorService;
     private String deviceAddress;
@@ -43,6 +47,8 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
     private boolean pendingNewline = false;
     private String newline = TextUtil.newline_crlf;
     private TextEmbeddingsViewModel textEmbeddingsViewModel;
+    private ChatViewModel chatviewModel;
+
     public static final String INTRO_MESSAGE =
             "Ask me anything about your vehicle!\n\n" +
                     "Try these examples..\n" +
@@ -63,6 +69,11 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         setHasOptionsMenu(true);
         assert getArguments() != null;
         deviceAddress = getArguments().getString("device");
+
+        Log.d("chatviewModel", "memorizing chunks");
+        chatviewModel = new ViewModelProvider(this).get(ChatViewModel.class);
+        chatviewModel.memorizeChunksFromJava("sample_context.txt");
+
     }
 
     @Override
@@ -77,7 +88,7 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
     @Override
     public void onStart() {
         super.onStart();
-        new ModelDownloader(requireContext(), executorService, this::status).downloadFile();
+        //new ModelDownloader(requireContext(), executorService, this::status).downloadFile();
         status(INTRO_MESSAGE);
         if(service != null)
             service.attach(this);
@@ -85,6 +96,22 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
             requireActivity().startService(new Intent(getActivity(), SerialService.class)); // prevents service destroy on unbind from recreated activity caused by orientation change
             requireActivity().bindService(new Intent(getActivity(), SerialService.class), this, 0); // this binds and triggers onServiceConnected
         }
+        chatviewModel.getLastResponseText().observe(getViewLifecycleOwner(), responseText -> {
+            if (responseText != null && !responseText.isEmpty()) {
+                if (responseText.startsWith(previousResponse)) {
+                    // Append only the new part
+                    String newText = responseText.substring(previousResponse.length());
+                    if (!newText.isEmpty()) {
+                        receiveText.append(newText);
+                    }
+                } else {
+                    // If response changed, append full text
+                    receiveText.append("\n" + responseText);
+                }
+                previousResponse = responseText;
+            }
+        });
+
     }
 
     @Override
@@ -208,7 +235,9 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         /* give a creative answer */
         if ("No match found".equals(decodedobd2code) || decodedobd2code == null) {
             if (str.trim().split("\\s+").length > 0) {
-                OBD2inference("<start_of_turn>user Respond in not more than 10 words only" + str + "<end_of_turn>model>");
+              //  OBD2inference("<start_of_turn>user Respond in not more than 10 words only" + str + "<end_of_turn>model>");
+
+                chatviewModel.requestResponse(str);
                 //OBD2inferenceAsync("<start_of_turn>user Respond in not more than 10 words only" + str + "<end_of_turn>model>");
             }
         } else {    /* send obd2 code across */
@@ -270,8 +299,11 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
 
             Log.d("ODB2llm", "msg from OBD2" + spn + "meaning: " + comment_on);
             if (comment_on.split("\\s+").length > 3 && getActivity() != null) {
-                OBD2inference("<start_of_turn>user As an automotive mechanic, provide only a 10-word comment on" + comment_on + "nothing else. " +
-                        "Do not include 'Sure,' 'Here is,' or any additional text. Respond with exactly 5 words <end_of_turn>");
+               //OBD2inference("<start_of_turn>user As an automotive mechanic, provide only a 10-word comment on" + comment_on + "nothing else. " +
+              //        "Do not include 'Sure,' 'Here is,' or any additional text. Respond with exactly 5 words <end_of_turn>");
+               // chatviewModel.requestResponse("describe" + comment_on);
+                requireActivity().runOnUiThread(() -> receiveText.append(comment_on+"\n"));
+
             }
         }
     }
