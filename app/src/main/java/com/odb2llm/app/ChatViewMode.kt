@@ -45,9 +45,10 @@ class ChatViewModel constructor(private val application: Application) :
         }
     }
 
-    fun memorizeChunksFromJava(filename: String) {
+    fun memorizeChunksFromJava(filename: String, onComplete: Runnable) {
         viewModelScope.launch {
             memorizeChunks(filename)
+            onComplete.run()
         }
     }
 

@@ -32,6 +32,11 @@ import kotlin.jvm.optionals.getOrNull
 
 /** The RAG pipeline for LLM generation. */
 class RagPipeline(private val application: Application) {
+
+  private val GEMMA_MODEL_PATH = "${application.filesDir}/model.task"
+  private val TOKENIZER_MODEL_PATH = "${application.filesDir}/sentencepiece.model"
+  private val GECKO_MODEL_PATH = "${application.filesDir}/gecko.tflite"
+
   private val mediaPipeLanguageModelOptions: LlmInferenceOptions =
     LlmInferenceOptions.builder().setModelPath(
       GEMMA_MODEL_PATH
@@ -138,9 +143,12 @@ class RagPipeline(private val application: Application) {
     private const val USE_GPU_FOR_EMBEDDINGS = true
     private const val CHUNK_SEPARATOR = "<chunk_splitter>"
 
+    /*
     private const val GEMMA_MODEL_PATH = "/data/local/tmp/gemma3-1b-it-int4.task"
     private const val TOKENIZER_MODEL_PATH = "/data/local/tmp/sentencepiece.model"
     private const val GECKO_MODEL_PATH = "/data/local/tmp/gecko.tflite"
+    */
+
     private const val GEMINI_EMBEDDING_MODEL = "models/text-embedding-004"
     private const val GEMINI_API_KEY = "..."
 

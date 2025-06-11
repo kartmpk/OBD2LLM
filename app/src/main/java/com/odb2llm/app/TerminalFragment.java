@@ -30,11 +30,9 @@ import java.util.ArrayDeque;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.odb2llm.app.ChatViewModel;
 
 public class TerminalFragment extends Fragment implements ServiceConnection, SerialListener {
 
-    private int lastAppendedLength = 0;
     private String previousResponse = "";
     private enum Connected { False, Pending, True }
     private ExecutorService executorService;
@@ -54,10 +52,11 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
                     "Try these examples..\n" +
                     "- Read engine RPM\n" +
                     "- Check vehicle speed\n" +
-                    "- Get fuel level\n" +
                     "- Read DTC error codes\n" +
                     "- What does code P0420 mean?\n" +
+                    "- What are Symtomps of p0420?\n" +
                     "- Why is coolant important?\n";
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -70,10 +69,10 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         assert getArguments() != null;
         deviceAddress = getArguments().getString("device");
 
-        Log.d("chatviewModel", "memorizing chunks");
-        chatviewModel = new ViewModelProvider(this).get(ChatViewModel.class);
-        chatviewModel.memorizeChunksFromJava("sample_context.txt");
-
+       Log.d("chatviewModel", "memorizing chunks");
+       //chatviewModel = new ViewModelProvider(this).get(ChatViewModel.class);
+        chatviewModel = new ViewModelProvider(requireActivity()).get(ChatViewModel.class);
+        //chatviewModel.memorizeChunksFromJava("sample_context.txt");
     }
 
     @Override
@@ -85,11 +84,11 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         super.onDestroy();
     }
 
+
     @Override
     public void onStart() {
         super.onStart();
-        //new ModelDownloader(requireContext(), executorService, this::status).downloadFile();
-        status(INTRO_MESSAGE);
+       // new ModelDownloader(requireContext(), executorService, this::status).downloadModels();
         if(service != null)
             service.attach(this);
         else {
@@ -111,7 +110,7 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
                 previousResponse = responseText;
             }
         });
-
+        status(INTRO_MESSAGE);
     }
 
     @Override
@@ -303,7 +302,6 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
               //        "Do not include 'Sure,' 'Here is,' or any additional text. Respond with exactly 5 words <end_of_turn>");
                // chatviewModel.requestResponse("describe" + comment_on);
                 requireActivity().runOnUiThread(() -> receiveText.append(comment_on+"\n"));
-
             }
         }
     }
