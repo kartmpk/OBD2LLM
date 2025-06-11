@@ -8,8 +8,8 @@ import java.io.File
 
 class InferenceModel private constructor(context: Context) {
     private var llmInference: LlmInference
-    //private val modelPath: String = context.filesDir.absolutePath + "/llm/model.bin"
-    private val modelPath: String = "/data/local/tmp/llm/model.task"
+    private val modelPath: String = context.filesDir.absolutePath + "/llm/model.bin"
+    //private val modelPath: String = "/data/local/tmp/llm/model.task"
 
     private val modelExists: Boolean
         get() = File(modelPath).exists()
