@@ -20,6 +20,7 @@ Install the app and use natural language to talk to OBD2 port. Below are some ex
 
 Responses will be in natural language.
 
+<img src="chatOBD2.gif" width="500"/>
 
 TODO
 ====
