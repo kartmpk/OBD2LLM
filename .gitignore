@@ -4,3 +4,6 @@
 /local.properties
 /app/build/
 /build/
+app/src/main/assets/Gecko_256_quant.tflite
+app/src/main/assets/gemma3-1b-it-int4.task
+app/src/main/assets/gemma3-1b-it-int4.task
