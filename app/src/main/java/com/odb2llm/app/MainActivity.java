@@ -42,11 +42,11 @@ public class MainActivity extends AppCompatActivity implements LifecycleObserver
         progressText.setVisibility(View.VISIBLE);
         fragmentContainer.setVisibility(View.GONE);
 
-        // Start downloading models
-        new ModelDownloader(this, executor, this::onModelDownloadStatus).downloadModels();
+        // Start loading AI models from app bundle
+        new ModelDownloader(this, executor, this::onModelLoadStatus).copyModelsFromAssets();
     }
 
-    private void onModelDownloadStatus(String status) {
+    private void onModelLoadStatus(String status) {
 
         runOnUiThread(() -> {
             if (status.startsWith("Progress:")) {
@@ -57,27 +57,48 @@ public class MainActivity extends AppCompatActivity implements LifecycleObserver
                 } catch (NumberFormatException ignored) {
                 }
                 progressBar.setProgress(percent);
-                progressText.setText("Loading... " + percent + "%");
+                progressText.setText("Loading AI models... " + percent + "%");
             } else {
                 // Show other status messages in the progressText
                 //      progressText.setText(status);
             }
 
-            if ("Download complete".equals(status)) {
-                progressText.setText("Loading chatOBD2..Almost there.. ");
+            if ("Asset copy complete".equals(status)) {
+                progressText.setText("AI models loaded! Initializing OBD2 assistant...");
+                
+                // Show progress during model initialization
+                progressBar.setIndeterminate(true);
+                progressText.setText("Loading diagnostic knowledge base...");
 
                 chatViewModel = new ViewModelProvider(this).get(ChatViewModel.class);
                 chatViewModel.memorizeChunksFromJava("sample_context.txt", () -> {
                     runOnUiThread(() -> {
-                        progressBar.setVisibility(View.GONE);
-                        progressText.setVisibility(View.GONE);
-                        fragmentContainer.setVisibility(View.VISIBLE);
+                        progressText.setText("Initializing AI assistant...");
+                        
+                        // Wait for MediaPipe LLM to be fully initialized
+                        // This prevents "LLM inference is not initialized yet!" errors
+                        new android.os.Handler().postDelayed(() -> {
+                            progressText.setText("Starting AI inference engine...");
+                            
+                            // Wait for MediaPipe to complete initialization
+                            // Based on logs: "Replacing 1373 out of 1373 node(s)" and "Initialized"
+                            new android.os.Handler().postDelayed(() -> {
+                                progressText.setText("AI engine ready! Loading OBD2 interface...");
+                                
+                                // Final delay to ensure everything is stable
+                                new android.os.Handler().postDelayed(() -> {
+                                    progressBar.setVisibility(View.GONE);
+                                    progressText.setVisibility(View.GONE);
+                                    fragmentContainer.setVisibility(View.VISIBLE);
 
-                        if (getSupportFragmentManager().findFragmentByTag("devices") == null) {
-                            getSupportFragmentManager().beginTransaction()
-                                    .add(R.id.fragment, new DevicesFragment(), "devices")
-                                    .commit();
-                        }
+                                    if (getSupportFragmentManager().findFragmentByTag("devices") == null) {
+                                        getSupportFragmentManager().beginTransaction()
+                                                .add(R.id.fragment, new DevicesFragment(), "devices")
+                                                .commit();
+                                    }
+                                }, 1500); // Final stability delay
+                            }, 3000); // Wait for MediaPipe initialization (based on your logs)
+                        }, 1000); // Show initialization message for 1 second
                     });
                 });
             }

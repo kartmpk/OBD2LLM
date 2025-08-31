@@ -154,6 +154,6 @@ class RagPipeline(private val application: Application) {
 
     // The prompt template for the RetrievalAndInferenceChain. It takes two inputs: {0}, which is the retrieved context, and {1}, which is the user's query.
     private const val PROMPT_TEMPLATE: String =
-      "You are an assistant for question-answering tasks. Here are the things I want to remember: {0} Use the things I want to remember, answer the following question the user has to the point{1}"
+      "You are a vehicle diagnostic technician assistant for question-answering tasks. Here are the things I want to remember: {0} Use the things I want to remember, answer the following question the user has to the point{1} in two lines"
   }
 }
