@@ -51,6 +51,11 @@ class ChatViewModel constructor(private val application: Application) :
             onComplete.run()
         }
     }
+    
+    // Wait for MediaPipe initialization to complete
+    fun waitForMediaPipeInitialization(callback: Runnable) {
+        ragPipeline.waitForInitialization { callback.run() }
+    }
 
     private fun appendMessage(role: MessageOwner, message: String) {
         messages.add(MessageData(role, message))

@@ -71,21 +71,34 @@ class RagPipeline(private val application: Application) {
     )
   )
   private val retrievalAndInferenceChain = RetrievalAndInferenceChain(config)
+  
+  // Track MediaPipe initialization status
+  private var isMediaPipeInitialized = false
+  private var initializationCallback: (() -> Unit)? = null
 
   init {
     Futures.addCallback(
       mediaPipeLanguageModel.initialize(),
       object : FutureCallback<Boolean> {
         override fun onSuccess(result: Boolean) {
-          // no-op
+          isMediaPipeInitialized = true
+          initializationCallback?.invoke()
         }
-
         override fun onFailure(t: Throwable) {
-          // no-op
+          // Handle initialization failure
         }
       },
       Executors.newSingleThreadExecutor(),
     )
+  }
+  
+  // Method to wait for MediaPipe initialization
+  fun waitForInitialization(callback: () -> Unit) {
+    if (isMediaPipeInitialized) {
+      callback()
+    } else {
+      initializationCallback = callback
+    }
   }
 
   fun memorizeChunks(context: Context, filename: String) {

@@ -77,34 +77,40 @@ public class MainActivity extends AppCompatActivity implements LifecycleObserver
                         
                         // Wait for MediaPipe LLM to be fully initialized
                         // This prevents "LLM inference is not initialized yet!" errors
-                        new android.os.Handler().postDelayed(() -> {
-                            progressText.setText("Starting AI inference engine...");
-                            
-                            // Wait for MediaPipe to complete initialization
-                            // Based on logs: "Replacing 1373 out of 1373 node(s)" and "Initialized"
-                            new android.os.Handler().postDelayed(() -> {
-                                progressText.setText("AI engine ready! Loading OBD2 interface...");
-                                
-                                // Final delay to ensure everything is stable
-                                new android.os.Handler().postDelayed(() -> {
-                                    progressBar.setVisibility(View.GONE);
-                                    progressText.setVisibility(View.GONE);
-                                    fragmentContainer.setVisibility(View.VISIBLE);
-
-                                    if (getSupportFragmentManager().findFragmentByTag("devices") == null) {
-                                        getSupportFragmentManager().beginTransaction()
-                                                .add(R.id.fragment, new DevicesFragment(), "devices")
-                                                .commit();
-                                    }
-                                }, 1500); // Final stability delay
-                            }, 3000); // Wait for MediaPipe initialization (based on your logs)
-                        }, 1000); // Show initialization message for 1 second
+                        progressText.setText("Starting AI inference engine...");
+                        
+                        // Use proper MediaPipe initialization check instead of arbitrary delays
+                        // This ensures the LLM is actually ready before showing the UI
+                        chatViewModel.waitForMediaPipeInitialization(new Runnable() {
+                            @Override
+                            public void run() {
+                                onMediaPipeReady();
+                            }
+                        });
                     });
                 });
             }
         });
     }
+    
+    private void onMediaPipeReady() {
+        runOnUiThread(() -> {
+            progressText.setText("AI engine ready! Loading OBD2 interface...");
+            
+            // Small delay to show the ready message
+            new android.os.Handler().postDelayed(() -> {
+                progressBar.setVisibility(View.GONE);
+                progressText.setVisibility(View.GONE);
+                fragmentContainer.setVisibility(View.VISIBLE);
 
+                if (getSupportFragmentManager().findFragmentByTag("devices") == null) {
+                    getSupportFragmentManager().beginTransaction()
+                            .add(R.id.fragment, new DevicesFragment(), "devices")
+                            .commit();
+                }
+            }, 1000); // Show ready message for 1 second
+        });
+    }
 
     @Override
     public void onBackStackChanged() {
