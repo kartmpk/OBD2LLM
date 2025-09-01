@@ -32,6 +32,11 @@ import kotlin.jvm.optionals.getOrNull
 
 /** The RAG pipeline for LLM generation. */
 class RagPipeline(private val application: Application) {
+  
+  init {
+    println("DEBUG: RagPipeline constructor called!")
+    println("DEBUG: Application context: ${application.applicationContext}")
+  }
 
   private val GEMMA_MODEL_PATH = "${application.filesDir}/model.task"
   private val TOKENIZER_MODEL_PATH = "${application.filesDir}/sentencepiece.model"
@@ -77,15 +82,18 @@ class RagPipeline(private val application: Application) {
   private var initializationCallback: (() -> Unit)? = null
 
   init {
+    println("DEBUG: Initializing MediaPipe LLM...")
     Futures.addCallback(
       mediaPipeLanguageModel.initialize(),
       object : FutureCallback<Boolean> {
         override fun onSuccess(result: Boolean) {
+          println("DEBUG: MediaPipe LLM initialization SUCCESS: $result")
           isMediaPipeInitialized = true
           initializationCallback?.invoke()
         }
         override fun onFailure(t: Throwable) {
-          // Handle initialization failure
+          println("DEBUG: MediaPipe LLM initialization FAILED: ${t.message}")
+          t.printStackTrace()
         }
       },
       Executors.newSingleThreadExecutor(),
@@ -143,12 +151,25 @@ class RagPipeline(private val application: Application) {
     callback: AsyncProgressListener<LanguageModelResponse>?,
   ): String =
     coroutineScope {
+      println("DEBUG: ====== generateResponse CALLED! ======")
+      println("DEBUG: Generating response for prompt: '$prompt'")
+      println("DEBUG: MediaPipe initialized: $isMediaPipeInitialized")
+      println("DEBUG: Using prompt template: $PROMPT_TEMPLATE")
+      
       val retrievalRequest =
         RetrievalRequest.create(
           prompt,
           RetrievalConfig.create(3, 0.0f, TaskType.QUESTION_ANSWERING)
         )
-      retrievalAndInferenceChain.invoke(retrievalRequest, callback).await().text
+      
+      println("DEBUG: Retrieval request created with config: 3 results, 0.0f threshold")
+      println("DEBUG: About to invoke retrievalAndInferenceChain...")
+      
+      val response = retrievalAndInferenceChain.invoke(retrievalRequest, callback).await()
+      println("DEBUG: Response generated: '${response.text}'")
+      println("DEBUG: Response length: ${response.text.length}")
+      
+      response.text
     }
 
   companion object {
@@ -167,6 +188,8 @@ class RagPipeline(private val application: Application) {
 
     // The prompt template for the RetrievalAndInferenceChain. It takes two inputs: {0}, which is the retrieved context, and {1}, which is the user's query.
     private const val PROMPT_TEMPLATE: String =
-      "You are a vehicle diagnostic technician assistant for question-answering tasks. Here are the things I want to remember: {0} Use the things I want to remember, answer the following question the user has to the point{1} in two lines"
+    "You are OBD2 vehicle diagnostic assistant for question-answering tasks. Here are the things I want to remember: {0} Use the things I want to remember, " +
+            "answer the following question the user has: {1} ONLY to the point"
+
   }
 }

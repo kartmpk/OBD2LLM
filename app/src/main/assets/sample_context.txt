@@ -1,8 +1,40 @@
-P0001–P0004: Engine may stall, lose power, or not start; causes include fuel regulator, wiring, PCM; needs prompt diagnosis.
+Services / Modes Cars have standard “services” that let mechanics or apps check the engine and sensors. These include checking current data, seeing snapshots of problems, reading error codes, clearing them, monitoring oxygen sensors, and more. Some car makers add extra services for special features.
+<chunk_splitter>
+Standard PIDs Cars report many data points called PIDs. Each PID gives specific info like engine speed, temperature, or fuel use. Not all cars report every PID, and some car makers add extra ones that are unique to their vehicles.
+<chunk_splitter>
+Live vs Snapshot Service 01 gives real-time engine data. Service 02 gives a snapshot from the moment a problem was detected. Some PIDs only exist in one service. If a snapshot is missing, the data in Service 02 is not useful.
+<chunk_splitter>
+Bit Flags Some data is stored as tiny “flags” in a number, like little on/off switches. Each bit in the number can mean a specific status, such as a sensor being active or a problem detected.
+<chunk_splitter>
+Performance Tracking Some PIDs track how well engine parts are working over time, like catalysts, oxygen sensors, EGR, exhaust filters, or boost pressure. This helps see if parts are worn or need attention.
+<chunk_splitter>
+Enumerated PIDs Some PIDs don’t give a number but a choice from a list. For example, fuel system status might say “engine off,” “cold start,” or “running normally.” Other PIDs show air system status, fuel type, or emission standards.
+<chunk_splitter>
+Proprietary & CAN Format Some car makers include extra PIDs for special features like hybrid batteries. Cars communicate these using a network called CAN, which defines how queries and responses are sent.
+<chunk_splitter>
+On-Board Diagnostics (OBD) is a system in vehicles that monitors and reports on the health of the car's engine and other key components.
+<chunk_splitter>
+OBD helps car owners and mechanics identify issues early, often before they become serious problems, by providing real-time data and diagnostic trouble codes.
+<chunk_splitter>
+The system started in the 1980s and has evolved to include standardized digital ports, making it easier to connect diagnostic tools to any vehicle.
+<chunk_splitter>
+OBD is required by law in many places, including the U.S., to ensure vehicles meet emissions standards and to detect failures that could increase pollution.
+<chunk_splitter>
+Early OBD systems would simply turn on a warning light if something was wrong, but modern systems provide detailed information about what and where the problem is.
+<chunk_splitter>
+OBD systems use a standardized connector and communication protocols, allowing mechanics to use universal diagnostic tools across different car brands and models.
+<chunk_splitter>
+The system can monitor various vehicle subsystems, including the engine, transmission, and emissions controls, to ensure they are functioning properly.
+<chunk_splitter>
+OBD systems have become more advanced over time, offering features like real-time data streaming, remote diagnostics, and integration with mobile apps for easier monitoring.
+<chunk_splitter>
+By providing early warnings and detailed diagnostics, OBD systems help reduce repair costs, improve vehicle reliability, and contribute to environmental protection.
+<chunk_splitter>
+P0001–P0004: Fuel Volume Regulator Control Circuit - Engine may stall, lose power, or not start. CAUSES: Faulty fuel pressure regulator, damaged wiring, PCM failure. FIXES: Replace fuel pressure regulator ($150-300), repair wiring ($100-200), PCM reprogramming ($200-400). COST: $150-800 depending on issue. SEVERITY: High - don't drive until fixed.
 <chunk_splitter>
 P0008 – Check engine light, rough running, rattling timing chain; serious crankshaft/camshaft misalignment; don’t drive, seek expert repair immediately.
 <chunk_splitter>
-P0010 – Check engine light, poor fuel economy, rough running; often faulty VVT solenoid or sludge; repair soon to avoid damage.
+P0010: Camshaft Position "A" - Bank 1 Timing Over-Advanced or System Performance - Check engine light, poor fuel economy, rough running, hesitation, reduced power. CAUSES: Faulty VVT (Variable Valve Timing) solenoid ($100-300), contaminated oil or sludge buildup ($50-150), wiring issues ($50-200), PCM failure ($200-500). FIXES: Replace VVT solenoid ($100-300), oil change and flush ($50-150), repair wiring ($50-200), PCM reprogramming ($200-500). COST: $50-500 depending on root cause. SEVERITY: Medium - affects performance and fuel economy, fix soon to prevent further damage.
 <chunk_splitter>
 P0020 – Rough engine, stalls, poor fuel economy; usually faulty VVT solenoid or wiring; unsafe to drive, professional diagnosis required.
 <chunk_splitter>
@@ -57,3 +89,256 @@ P0088 – Check engine light, black smoke, misfires, poor idle, failsafe mode, s
 P0089 – Check engine light, poor acceleration, stalling, bad fuel economy; often fuel regulator or pump issue; seriousness varies, professional diagnosis required.
 <chunk_splitter>
 P0090 – Check engine light, delayed start, black smoke, high fuel use, poor performance; usually regulator or wiring fault; serious risk, avoid driving.
+<chunk_splitter>
+P0300: Random/Multiple Cylinder Misfire - Engine runs rough, loss of power, poor fuel economy. CAUSES: Bad spark plugs ($20-50 each), faulty ignition coils ($100-300 each), clogged fuel injectors ($50-150 each), low fuel pressure. FIXES: Replace spark plugs ($100-200), replace ignition coils ($200-600), clean/replace fuel injectors ($200-400), fuel system service ($100-300). COST: $100-800 depending on root cause. SEVERITY: Medium - fix soon to prevent catalytic converter damage.
+<chunk_splitter>
+P0171: System Too Lean (Bank 1) - Check engine light, poor fuel economy, rough idle, hesitation. CAUSES: Vacuum leak ($50-200), dirty mass airflow sensor ($50-100), faulty oxygen sensor ($100-300), fuel pressure regulator ($150-300). FIXES: Fix vacuum leak ($50-200), clean/replace MAF sensor ($50-200), replace O2 sensor ($100-300), replace fuel pressure regulator ($150-300). COST: $50-300 depending on issue. SEVERITY: Medium - affects performance and fuel economy.
+<chunk_splitter>
+P0420: Catalyst System Efficiency Below Threshold (Bank 1) - Check engine light, may have no symptoms initially. CAUSES: Worn catalytic converter, faulty oxygen sensors, engine running rich/lean, oil contamination. FIXES: Replace catalytic converter ($500-2000), replace O2 sensors ($100-300), fix underlying engine issues ($100-1000). COST: $500-3000+ depending on vehicle and root cause. SEVERITY: Medium - will fail emissions test, can cause engine damage if ignored.
+<chunk_splitter>
+P0000-P0004: No trouble or fuel volume regulator problems. P0000 means all is normal. P0001 indicates the fuel volume regulator circuit is open. P0002 shows the regulator is not performing correctly. P0003 means voltage is too low. P0004 means voltage is too high.
+<chunk_splitter>
+P0005-P0007: Fuel shutoff valve issues. P0005 means the valve circuit is open. P0006 indicates low voltage. P0007 indicates high voltage.
+<chunk_splitter>
+P0008-P0012: Engine position and camshaft timing issues. P0008 shows a problem with engine position system performance. P0010-P0012 indicate intake camshaft actuator or timing is off, either too advanced or too retarded on bank 1.
+<chunk_splitter>
+P0013-P0015: Exhaust camshaft timing problems. P0013 is actuator circuit open. P0014 is timing too advanced. P0015 is timing too retarded, all on bank 1.
+<chunk_splitter>
+P0016-P0019: Crankshaft and camshaft correlation issues. P0016-P0017 are bank 1 sensors A & B not matching. P0018-P0019 are bank 2 sensors A & B not matching.
+<chunk_splitter>
+P0020-P0025: Intake and exhaust camshaft issues on bank 2. P0020-P0025 indicate actuator circuits open or timing too advanced/retarded for intake/exhaust camshafts.
+<chunk_splitter>
+P0026-P0029: Intake/exhaust valve control solenoid issues on bank 2. The solenoids are not operating correctly or have voltage problems.
+<chunk_splitter>
+P0030-P0038: Oxygen sensor and turbo/supercharger issues. P0030-P0032 show heater circuit problems in bank 1 sensor 1. P0033-P0035 show turbo bypass valve issues. P0036-P0038 show heater circuit problems for bank 1 sensor 2.
+<chunk_splitter>
+P0039-P0044: Oxygen sensor and turbo heater issues. P0039 is turbo valve performance issue. P0040-P0041 show oxygen sensor signals swapped. P0042-P0044 show heater circuit issues for bank 1 sensor 3.
+<chunk_splitter>
+P0046-P0049: Turbo/supercharger boost problems. P0046 shows boost control circuit performance issue. P0047-P0048 show low/high voltage issues. P0049 indicates turbine overspeed.
+<chunk_splitter>
+P0050-P0058: Oxygen sensor heater issues on bank 2. P0050-P0052 show heater circuit problems. P0053-P0056 indicate heater resistance issues. P0057-P0058 show low/high voltage problems.
+<chunk_splitter>
+P0059-P0064: Oxygen sensor heater circuits for sensor 3. P0059-P0061 indicate heater resistance problems. P0062-P0064 show heater control circuit issues.
+<chunk_splitter>
+P0065-P0068: Air assisted injector and MAF/Throttle issues. P0065-P0067 show injector control circuit problems. P0068 indicates MAF and throttle position mismatch.
+<chunk_splitter>
+P0069-P0072: MAP and ambient air temperature issues. P0069 shows MAP and barometric pressure mismatch. P0070-P0072 indicate ambient air temperature sensor problems.
+<chunk_splitter>
+P0073-P0075: Coolant and throttle sensor issues. P0073 shows coolant temperature sensor out of range. P0074 indicates sensor circuit low. P0075 indicates sensor circuit high voltage.
+<chunk_splitter>
+P0076-P0079: Exhaust and oxygen sensor issues. P0076-P0078 show O2 sensor signals out of expected range or heater circuit problems. P0079 indicates sensor response too slow or abnormal.
+<chunk_splitter>
+P0080-P0084: Fuel system and rail pressure issues. P0080-P0082 show fuel volume regulator or fuel rail pressure sensor issues. P0083-P0084 indicate high or low fuel rail pressure.
+<chunk_splitter>
+P0085-P0089: Fuel injector circuit problems. P0085-P0087 indicate injector circuit failure or voltage problems. P0088-P0089 indicate fuel pressure issues or feedback sensor mismatch.
+<chunk_splitter>
+P0090-P0094: Intake air system issues. P0090 shows intake air temperature sensor problem. P0091-P0094 indicate sensor readings out of range or performance issues.
+<chunk_splitter>
+P0100-P0104: Mass airflow (MAF) sensor problems. P0100-P0102 indicate MAF circuit or range/performance issues. P0103-P0104 indicate high or low voltage problems.
+<chunk_splitter>
+P0105-P0109: Manifold absolute pressure (MAP) sensor issues. P0105-P0106 indicate MAP sensor circuit or range problems. P0107-P0109 indicate low/high voltage readings.
+<chunk_splitter>
+P0110-P0114: Intake air or engine coolant temperature sensor issues. P0110-P0111 indicate circuit problems. P0112-P0114 indicate sensor readings too low or high.
+<chunk_splitter>
+P0115-P0119: Engine coolant sensor and thermostat issues. P0115-P0116 indicate sensor or circuit problems. P0117-P0119 indicate low/high voltage or sensor reading problems.
+<chunk_splitter>
+P0120-P0124: Throttle/Pedal sensor problems. P0120-P0121 indicate throttle position sensor circuit issues. P0122-P0124 indicate low/high voltage or range problems.
+<chunk_splitter>
+P0125-P0129: Engine cooling and thermostat problems. P0125 indicates insufficient coolant temperature. P0126-P0129 indicate thermostat or sensor performance issues.
+<chunk_splitter>
+P0130-P0134: Oxygen (O2) sensor problems bank 1 sensor 1. P0130-P0132 indicate sensor circuit problems or heater issues. P0133-P0134 indicate slow response or circuit malfunction.
+<chunk_splitter>
+P0135-P0139: O2 sensor heater and circuit issues bank 1 sensor 2. P0135-P0137 indicate heater circuit problems. P0138-P0139 indicate high voltage or sensor signal issues.
+<chunk_splitter>
+P0140-P0144: Oxygen sensor issues, bank 1 sensor 3. P0140 shows no activity detected from the sensor. P0141-P0144 indicate heater circuit problems or slow response in sensor 3.
+<chunk_splitter>
+P0145-P0149: Oxygen sensor problems, bank 2 sensor 1. P0145 shows sensor inactive. P0146-P0149 indicate heater circuit issues or abnormal sensor readings.
+<chunk_splitter>
+P0150-P0154: Oxygen sensor issues, bank 2 sensor 2. P0150 shows circuit malfunction. P0151-P0154 indicate slow response, low/high voltage, or heater problems.
+<chunk_splitter>
+P0155-P0159: Oxygen sensor problems, bank 2 sensor 3. P0155-P0157 indicate heater circuit problems. P0158-P0159 indicate abnormal voltage or sensor performance issues.
+<chunk_splitter>
+P0160-P0164: O2 sensor range or circuit performance issues. P0160-P0164 show that the sensors on various banks are not giving readings within expected ranges.
+<chunk_splitter>
+P0170-P0174: Fuel mixture problems. P0170 indicates fuel trim malfunction. P0171-P0174 show mixture too lean or too rich on bank 1 or bank 2.
+<chunk_splitter>
+P0175-P0179: Fuel trim and sensor issues. P0175-P0179 indicate problems with oxygen sensors or fuel mixture that can affect engine performance.
+<chunk_splitter>
+P0180-P0184: Coolant and fuel temperature sensor issues. P0180-P0184 indicate low/high voltage, circuit issues, or performance problems with temperature sensors.
+<chunk_splitter>
+P0185-P0189: Coolant and fuel temperature circuit issues. P0185-P0189 indicate sensor circuit malfunctions or temperature readings out of range.
+<chunk_splitter>
+P0190-P0194: Fuel rail pressure sensor problems. P0190 shows fuel pressure circuit malfunction. P0191-P0194 indicate low/high pressure or sensor performance issues.
+<chunk_splitter>
+P0195-P0199: Fuel rail or manifold pressure sensor issues. P0195-P0199 indicate low/high voltage, circuit problems, or abnormal readings.
+<chunk_splitter>
+P0200-P0204: Fuel injector circuit problems. P0200-P0204 indicate injector circuits malfunctioning or receiving wrong voltage.
+<chunk_splitter>
+P0205-P0209: Fuel injector issues continued. P0205-P0209 show circuits for injectors 5-9 are open, low, or high voltage.
+<chunk_splitter>
+P0210-P0214: Engine timing and performance issues. P0210-P0214 indicate problems with engine timing, fuel delivery, or cylinder performance that may affect engine power or cause misfires.
+<chunk_splitter>
+P0215-P0219: Engine over-speed or performance issues. P0215-P0219 indicate the engine is running too fast, sensors are reporting abnormal values, or fuel system issues.
+<chunk_splitter>
+P0220-P0224: Throttle and pedal sensor issues. P0220-P0224 indicate problems with throttle position sensors or pedal position sensors giving wrong voltage or range.
+<chunk_splitter>
+P0225-P0229: Throttle/pedal sensor circuit issues continued. P0225-P0229 indicate low/high voltage or abnormal readings in sensors for throttle or pedal control.
+<chunk_splitter>
+P0230-P0234: Fuel pump and boost control issues. P0230-P0234 indicate fuel pump relay problems, low/high voltage, or boost control malfunctions affecting engine performance.
+<chunk_splitter>
+P0235-P0239: Turbocharger and fuel pump circuit issues. P0235-P0239 indicate turbocharger or fuel pump circuits are not performing correctly or have voltage problems.
+<chunk_splitter>
+P0240-P0244: Turbocharger wastegate issues. P0240-P0244 indicate problems with wastegate control or actuator circuits on turbochargers.
+<chunk_splitter>
+P0245-P0249: Turbocharger and boost performance issues. P0245-P0249 show abnormal performance or voltage in turbocharger circuits affecting engine boost.
+<chunk_splitter>
+P0250-P0254: Fuel injector pump issues. P0250-P0254 indicate problems with the fuel injector pump, such as abnormal performance, voltage issues, or circuit malfunctions.
+<chunk_splitter>
+P0255-P0259: Fuel injection pump continued. P0255-P0259 show low/high voltage or performance issues in fuel injection pumps.
+<chunk_splitter>
+P0260-P0264: Cylinder-specific injector problems. P0260-P0264 indicate fuel injectors for cylinders 1–5 are malfunctioning or have voltage issues.
+<chunk_splitter>
+P0265-P0269: Cylinder injector issues continued. P0265-P0269 indicate fuel injectors for cylinders 6–10 have circuit, voltage, or performance problems.
+<chunk_splitter>
+P0270-P0274: Fuel system balance issues. P0270-P0274 show fuel trim differences or injector performance problems across cylinders.
+<chunk_splitter>
+P0275-P0279: Engine misfire or cylinder balance issues. P0275-P0279 indicate misfires or injector/cylinder problems affecting smooth engine operation.
+<chunk_splitter>
+P0300-P0304: Engine misfire issues. P0300 means random/multiple misfires. P0301-P0304 indicate misfire on cylinders 1–4.
+<chunk_splitter>
+P0305-P0308: Engine misfire issues continued. P0305-P0308 indicate misfire on cylinders 5–8.
+<chunk_splitter>
+P0310-P0314: Starter or cylinder misfire detection. P0310 shows misfire detected at startup. P0311-P0314 indicate misfires in specific cylinders right after engine start.
+<chunk_splitter>
+P0320-P0324: Ignition or knock sensor issues. P0320-P0324 show ignition signal circuit problems or knock sensor performance issues affecting engine timing.
+<chunk_splitter>
+P0325-P0329: Knock sensor or ignition circuit issues continued. P0325-P0329 indicate low/high voltage or abnormal readings in knock sensors or ignition circuits.
+<chunk_splitter>
+P0330-P0334: Crankshaft position sensor issues. P0330-P0334 indicate signal problems, low/high voltage, or circuit failures in the crankshaft sensor.
+<chunk_splitter>
+P0335-P0339: Crankshaft sensor circuit issues continued. P0335-P0339 indicate circuit malfunctions, low/high voltage, or sensor performance issues.
+<chunk_splitter>
+P0340-P0344: Camshaft position sensor issues. P0340-P0344 indicate sensor circuit malfunction, low/high voltage, or abnormal sensor readings.
+<chunk_splitter>
+P0345-P0349: Camshaft sensor issues continued. P0345-P0349 indicate low/high voltage or signal problems in camshaft position sensors.
+<chunk_splitter>
+P0350-P0354: Ignition coil circuit issues. P0350-P0354 show that coils for cylinders 1–5 have circuit or voltage problems.
+<chunk_splitter>
+P0355-P0359: Ignition coil issues continued. P0355-P0359 indicate circuit/voltage issues for coils on cylinders 6–10.
+<chunk_splitter>
+P0360-P0364: Ignition system performance problems. P0360-P0364 show coils not firing correctly or timing signals off, affecting engine smoothness.
+<chunk_splitter>
+P0365-P0369: Cylinder-specific ignition issues continued. P0365-P0369 indicate misfires or coil circuit failures on specific cylinders.
+<chunk_splitter>
+P0370-P0374: P0370-P0374 codes mean crankshaft or camshaft correlation problems. The engine sensors are not matching expected timing, which can cause rough running or misfires.
+<chunk_splitter>
+P0375-P0379: P0375-P0379 codes mean misfire detection or ignition timing problems. The car’s computer sees the engine isn’t firing correctly in certain cylinders.
+<chunk_splitter>
+P0380-P0384: P0380-P0384 codes mean secondary air injection system issues. The system that pumps extra air to reduce emissions is not working properly.
+<chunk_splitter>
+P0385-P0389: P0385-P0389 codes mean air injection system sensor or relay issues. Sensors or relays controlling the air injection may have circuit problems or bad signals.
+<chunk_splitter>
+P0390-P0394: P0390-P0394 codes mean crankshaft/camshaft position sensor problems. The engine timing sensors are giving incorrect or missing signals.
+<chunk_splitter>
+P0395-P0399: P0395-P0399 codes mean cylinder misfire detection. The engine computer detects misfires in cylinders 1–4, which can affect smooth running.
+<chunk_splitter>
+P0400-P0404: P0400-P0404 codes mean Exhaust Gas Recirculation (EGR) flow issues. The system that reduces nitrogen oxides isn’t flowing correctly.
+<chunk_splitter>
+P0405-P0409: P0405-P0409 codes mean EGR sensor or circuit problems. Sensors or wiring controlling EGR are reading too high, too low, or malfunctioning.
+<chunk_splitter>
+P0410-P0414: P0410-P0414 codes mean Secondary Air Injection (SAI) system issues. The system injecting extra air to reduce emissions is not working properly.
+<chunk_splitter>
+P0415-P0419: P0415-P0419 codes mean SAI system relay or sensor problems. Relays, sensors, or circuits controlling the SAI system may be faulty.
+<chunk_splitter>
+P0420-P0424: P0420-P0424 codes mean catalytic converter efficiency problems. The catalytic converter is not reducing emissions as expected.
+<chunk_splitter>
+P0425-P0429: P0425-P0429 codes mean oxygen sensor or circuit problems near catalytic converter. Sensors may be faulty or wiring is causing bad readings.
+<chunk_splitter>
+P0430-P0434: P0430-P0434 codes mean catalytic converter or oxygen sensor issues, bank 2. The converter isn’t working properly or sensors are reading wrong.
+<chunk_splitter>
+P0435-P0439: P0435-P0439 codes mean sensor circuit or catalytic system problems. Relays, sensors, or circuits may be malfunctioning or giving out-of-range signals.
+<chunk_splitter>
+P0370-P0374: P0370-P0374 codes mean crankshaft or camshaft correlation problems. The engine sensors are not matching expected timing, which can cause rough running or misfires.
+<chunk_splitter>
+P0375-P0379: P0375-P0379 codes mean misfire detection or ignition timing problems. The car’s computer sees the engine isn’t firing correctly in certain cylinders.
+<chunk_splitter>
+P0380-P0384: P0380-P0384 codes mean secondary air injection system issues. The system that pumps extra air to reduce emissions is not working properly.
+<chunk_splitter>
+P0385-P0389: P0385-P0389 codes mean air injection system sensor or relay issues. Sensors or relays controlling the air injection may have circuit problems or bad signals.
+<chunk_splitter>
+P0390-P0394: P0390-P0394 codes mean crankshaft/camshaft position sensor problems. The engine timing sensors are giving incorrect or missing signals.
+<chunk_splitter>
+P0395-P0399: P0395-P0399 codes mean cylinder misfire detection. The engine computer detects misfires in cylinders 1–4, which can affect smooth running.
+<chunk_splitter>
+P0400-P0404: P0400-P0404 codes mean Exhaust Gas Recirculation (EGR) flow issues. The system that reduces nitrogen oxides isn’t flowing correctly.
+<chunk_splitter>
+P0405-P0409: P0405-P0409 codes mean EGR sensor or circuit problems. Sensors or wiring controlling EGR are reading too high, too low, or malfunctioning.
+<chunk_splitter>
+P0410-P0414: P0410-P0414 codes mean Secondary Air Injection (SAI) system issues. The system injecting extra air to reduce emissions is not working properly.
+<chunk_splitter>
+P0415-P0419: P0415-P0419 codes mean SAI system relay or sensor problems. Relays, sensors, or circuits controlling the SAI system may be faulty.
+<chunk_splitter>
+P0420-P0424: P0420-P0424 codes mean catalytic converter efficiency problems. The catalytic converter is not reducing emissions as expected.
+<chunk_splitter>
+P0425-P0429: P0425-P0429 codes mean oxygen sensor or circuit problems near catalytic converter. Sensors may be faulty or wiring is causing bad readings.
+<chunk_splitter>
+P0430-P0434: P0430-P0434 codes mean catalytic converter or oxygen sensor issues, bank 2. The converter isn’t working properly or sensors are reading wrong.
+<chunk_splitter>
+P0435-P0439: P0435-P0439 codes mean sensor circuit or catalytic system problems. Relays, sensors, or circuits may be malfunctioning or giving out-of-range signals.
+<chunk_splitter>
+P0510-P0514: P0510-P0514 codes mean idle air control or throttle actuator issues. The engine may idle too high or too low because the valve or circuit is malfunctioning.
+<chunk_splitter>
+P0515-P0519: P0515-P0519 codes mean idle speed control or sensor problems. The idle speed is outside normal range, or sensors controlling idle are faulty.
+<chunk_splitter>
+P0520-P0524: P0520-P0524 codes mean oil pressure sensor or circuit issues. The sensor measuring engine oil pressure is giving abnormal or out-of-range readings.
+<chunk_splitter>
+P0525-P0529: P0525-P0529 codes mean oil pressure switch or control problems. Circuits or switches controlling oil pressure may be faulty or stuck.
+<chunk_splitter>
+P0530-P0534: P0530-P0534 codes mean air conditioning (A/C) system pressure or sensor problems. The A/C system pressure sensor is not reporting correctly.
+<chunk_splitter>
+P0535-P0539: P0535-P0539 codes mean A/C pressure switch or control circuit issues. The system controlling air conditioning may be malfunctioning.
+<chunk_splitter>
+P0540-P0544: P0540-P0544 codes mean exhaust gas or emission sensor problems. Sensors monitoring emissions may be giving incorrect readings.
+<chunk_splitter>
+P0545-P0549: P0545-P0549 codes mean emissions system relay or circuit issues. Relays or wiring controlling emissions sensors may be faulty.
+<chunk_splitter>
+P0550-P0554: P0550-P0554 codes mean power steering pressure or sensor issues. The sensor measuring hydraulic power steering pressure is giving abnormal readings.
+<chunk_splitter>
+P0555-P0559: P0555-P0559 codes mean power steering circuit or actuator problems. Wiring or valves controlling steering pressure may be malfunctioning.
+<chunk_splitter>
+P0560-P0564: P0560-P0564 codes mean system voltage or alternator problems. The battery or charging system is showing too low or too high voltage.
+<chunk_splitter>
+P0565-P0569: P0565-P0569 codes mean low voltage or power control circuit issues. Electrical circuits controlling voltage are faulty or readings are abnormal.
+<chunk_splitter>
+P0570-P0574: P0570-P0574 codes mean brake light switch or control circuit issues. The brake lights or their controlling sensors are not working correctly.
+<chunk_splitter>
+P0575-P0579: P0575-P0579 codes mean brake switch or circuit malfunctions. Wiring or relays controlling the brake light system may be faulty.
+<chunk_splitter>
+P0580-P0584: P0580-P0584 codes mean cruise control or actuator circuit problems. The system controlling cruise speed may be faulty or wiring is giving wrong signals.
+<chunk_splitter>
+P0585-P0589: P0585-P0589 codes mean cruise control or vacuum system issues. The cruise system may not maintain speed because actuators or circuits are malfunctioning.
+<chunk_splitter>
+P0590-P0594: P0590-P0594 codes mean thermostat or radiator fan control problems. The engine cooling system may overheat or underperform due to circuit issues.
+<chunk_splitter>
+P0595-P0599: P0595-P0599 codes mean thermostat or fan actuator issues continued. Sensors or circuits controlling cooling fans or thermostat may be faulty.
+<chunk_splitter>
+P0600-P0604: P0600-P0604 codes mean internal computer (ECM/PCM) communication problems. The car’s main computer is having trouble communicating with sensors or other modules.
+<chunk_splitter>
+P0605-P0609: P0605-P0609 codes mean computer internal faults. The engine control module (ECM/PCM) may have a memory or software problem.
+<chunk_splitter>
+P0610-P0614: P0610-P0614 codes mean starter or immobilizer circuit issues. The car may not start because of electrical problems in the starter or security system.
+<chunk_splitter>
+P0615-P0619: P0615-P0619 codes mean actuator or computer output problems. Certain actuators controlled by the ECM are not responding or have wiring issues.
+<chunk_splitter>
+P0620-P0624: P0620-P0624 codes mean alternator or generator control problems. The charging system is malfunctioning and may affect battery voltage.
+<chunk_splitter>
+P0625-P0629: P0625-P0629 codes mean generator or control circuit faults. Relays, wiring, or control circuits for the alternator may be abnormal.
+<chunk_splitter>
+P0630-P0634: P0630-P0634 codes mean sensor or actuator not calibrated. Some sensors or actuators may not be properly programmed or synchronized.
+<chunk_splitter>
+P0635-P0639: P0635-P0639 codes mean throttle, sensor, or actuator calibration issues. Engine may run rough or idle incorrectly due to uncalibrated components.
+<chunk_splitter>
+P0640-P0644: P0640-P0644 codes mean sensor or control circuit voltage problems. Sensors controlling engine or emissions systems may read too high or too low.
+<chunk_splitter>
+P0645-P0649: P0645-P0649 codes mean sensor or circuit malfunctions continued. Wiring, relays, or the sensor itself may be faulty.
+<chunk_splitter>
