@@ -1,6 +1,7 @@
 package com.odb2llm.app;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -47,7 +48,8 @@ public class MainActivity extends AppCompatActivity implements LifecycleObserver
     }
 
     private void onModelLoadStatus(String status) {
-
+        Log.d("MainActivity", "Model load status: " + status);
+        
         runOnUiThread(() -> {
             if (status.startsWith("Progress:")) {
                 // Existing progress handling (if used)
@@ -60,10 +62,10 @@ public class MainActivity extends AppCompatActivity implements LifecycleObserver
                 progressText.setText("Loading AI models... " + percent + "%");
             } else {
                 // Show other status messages in the progressText
-                //      progressText.setText(status);
+                progressText.setText(status);
             }
 
-            if ("Asset copy complete".equals(status)) {
+            if ("✓ All model files ready".equals(status)) {
                 progressText.setText("AI models loaded! Initializing OBD2 assistant...");
                 
                 // Show progress during model initialization
@@ -71,7 +73,9 @@ public class MainActivity extends AppCompatActivity implements LifecycleObserver
                 progressText.setText("Loading diagnostic knowledge base...");
 
                 chatViewModel = new ViewModelProvider(this).get(ChatViewModel.class);
+                Log.d("MainActivity", "Starting knowledge base memorization...");
                 chatViewModel.memorizeChunksFromJava("sample_context.txt", () -> {
+                    Log.d("MainActivity", "Knowledge base memorization complete, starting MediaPipe initialization...");
                     runOnUiThread(() -> {
                         progressText.setText("Initializing AI assistant...");
                         
@@ -81,9 +85,11 @@ public class MainActivity extends AppCompatActivity implements LifecycleObserver
                         
                         // Use proper MediaPipe initialization check instead of arbitrary delays
                         // This ensures the LLM is actually ready before showing the UI
+                        Log.d("MainActivity", "Waiting for MediaPipe initialization...");
                         chatViewModel.waitForMediaPipeInitialization(new Runnable() {
                             @Override
                             public void run() {
+                                Log.d("MainActivity", "MediaPipe initialization complete, calling onMediaPipeReady...");
                                 onMediaPipeReady();
                             }
                         });

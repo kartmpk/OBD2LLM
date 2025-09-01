@@ -156,6 +156,10 @@ class RagPipeline(private val application: Application) {
       println("DEBUG: MediaPipe initialized: $isMediaPipeInitialized")
       println("DEBUG: Using prompt template: $PROMPT_TEMPLATE")
       
+      // Detect if this is an OBD2 code question
+      val isOBD2CodeQuestion = detectOBD2Code(prompt)
+      println("DEBUG: Is OBD2 code question: $isOBD2CodeQuestion")
+      
       val retrievalRequest =
         RetrievalRequest.create(
           prompt,
@@ -176,6 +180,43 @@ class RagPipeline(private val application: Application) {
     private const val COMPUTE_EMBEDDINGS_LOCALLY = true
     private const val USE_GPU_FOR_EMBEDDINGS = true
     private const val CHUNK_SEPARATOR = "<chunk_splitter>"
+    
+    // OBD2 code detection regex patterns
+    private val OBD2_CODE_PATTERNS = listOf(
+      Regex("P\\d{4}", RegexOption.IGNORE_CASE),           // P0001, P0010, P010D, etc.
+      Regex("C\\d{4}", RegexOption.IGNORE_CASE),           // C0001, C0010, etc.
+      Regex("B\\d{4}", RegexOption.IGNORE_CASE),           // B0001, B0010, etc.
+      Regex("U\\d{4}", RegexOption.IGNORE_CASE),           // U0001, U0010, etc.
+      Regex("\\b\\d{4}\\b", RegexOption.IGNORE_CASE)       // 0001, 0010, 010D, etc.
+    )
+    
+    /**
+     * Detects if the user query contains an OBD2 diagnostic code
+     */
+    private fun detectOBD2Code(query: String): Boolean {
+      val normalizedQuery = query.lowercase()
+      
+      // Check for common OBD2 question patterns
+      val questionPatterns = listOf(
+        "what is", "what does", "how to fix", "causes", "cost", "symptoms",
+        "meaning", "diagnostic", "error code", "check engine"
+      )
+      
+      val hasQuestionPattern = questionPatterns.any { pattern ->
+        normalizedQuery.contains(pattern)
+      }
+      
+      // Check for OBD2 code patterns
+      val hasOBD2Code = OBD2_CODE_PATTERNS.any { pattern ->
+        pattern.containsMatchIn(query)
+      }
+      
+      println("DEBUG: Query: '$query'")
+      println("DEBUG: Has question pattern: $hasQuestionPattern")
+      println("DEBUG: Has OBD2 code: $hasOBD2Code")
+      
+      return hasQuestionPattern && hasOBD2Code
+    }
 
     /*
     private const val GEMMA_MODEL_PATH = "/data/local/tmp/gemma3-1b-it-int4.task"
@@ -188,8 +229,6 @@ class RagPipeline(private val application: Application) {
 
     // The prompt template for the RetrievalAndInferenceChain. It takes two inputs: {0}, which is the retrieved context, and {1}, which is the user's query.
     private const val PROMPT_TEMPLATE: String =
-    "You are OBD2 vehicle diagnostic assistant for question-answering tasks. Here are the things I want to remember: {0} Use the things I want to remember, " +
-            "answer the following question the user has: {1} ONLY to the point"
-
+    "You are a OBD2 assistant for question-answering tasks. Here are the things I want to remember: {0} Use the things I want to remember, answer the following question the user has: {1} to the point"
   }
 }

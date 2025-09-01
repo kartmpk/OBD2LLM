@@ -36,42 +36,41 @@ public class ModelDownloader {
     public void copyModelsFromAssets() {
         executorService.execute(() -> {
             try {
+                statusCallback.accept("Copying model files from assets...");
                 File baseDir = context.getFilesDir();
 
                 // Copy main model from assets
                 File modelFile = new File(baseDir, MODEL_FILENAME);
                 if (!isFilePresentAndValid(modelFile)) {
                     copyAssetToFile(MODEL_ASSET, modelFile);
-                    statusCallback.accept("Main model copied from assets to: " + modelFile.getAbsolutePath());
+                    statusCallback.accept("✓ Main model ready");
                 } else {
-                    statusCallback.accept("Main model already present: " + modelFile.getAbsolutePath());
+                    statusCallback.accept("✓ Main model already present");
                 }
 
                 // Copy Gecko model from assets
                 File geckoFile = new File(baseDir, GECKO_FILENAME);
                 if (!isFilePresentAndValid(geckoFile)) {
                     copyAssetToFile(GECKO_ASSET, geckoFile);
-                    statusCallback.accept("Gecko model copied from assets to: " + geckoFile.getAbsolutePath());
+                    statusCallback.accept("✓ Gecko model ready");
                 } else {
-                    statusCallback.accept("Gecko model already present: " + geckoFile.getAbsolutePath());
+                    statusCallback.accept("✓ Gecko model already present");
                 }
 
                 // Copy tokenizer from assets
                 File tokenizerFile = new File(baseDir, TOKENIZER_FILENAME);
                 if (!isFilePresentAndValid(tokenizerFile)) {
                     copyAssetToFile(TOKENIZER_ASSET, tokenizerFile);
-                    statusCallback.accept("Tokenizer copied from assets to: " + tokenizerFile.getAbsolutePath());
+                    statusCallback.accept("✓ Tokenizer ready");
                 } else {
-                    statusCallback.accept("Tokenizer already present: " + tokenizerFile.getAbsolutePath());
+                    statusCallback.accept("✓ Tokenizer already present");
                 }
 
-                statusCallback.accept("Asset copy complete");
-
-                logDirectoryContents(baseDir);
+                statusCallback.accept("✓ All model files ready");
 
             } catch (IOException e) {
                 Log.e(TAG, "Asset copy failed", e);
-                statusCallback.accept("Asset copy failed: " + e.getMessage());
+                statusCallback.accept("✗ Asset copy failed: " + e.getMessage());
             }
         });
     }
@@ -91,26 +90,9 @@ public class ModelDownloader {
             while ((bytesRead = input.read(buffer)) != -1) {
                 output.write(buffer, 0, bytesRead);
                 totalBytesRead += bytesRead;
-
-                // Show progress for large files
-                if (totalBytesRead % (1024 * 1024) == 0) { // Every MB
-                    statusCallback.accept("Copying " + assetName + ": " + (totalBytesRead / (1024 * 1024)) + " MB");
-                }
             }
             
-            statusCallback.accept("Finished copying " + assetName + " (" + (totalBytesRead / (1024 * 1024)) + " MB)");
-        }
-    }
-
-    private void logDirectoryContents(File dir) {
-        File[] files = dir.listFiles();
-        if (files != null) {
-            Log.i(TAG, "Files in directory: " + dir.getAbsolutePath());
-            for (File file : files) {
-                Log.i(TAG, " - " + file.getName() + " (" + file.length() + " bytes)");
-            }
-        } else {
-            Log.w(TAG, "No files found or directory not accessible.");
+            Log.d(TAG, "Copied " + assetName + " (" + (totalBytesRead / (1024 * 1024)) + " MB)");
         }
     }
 }
